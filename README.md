@@ -71,11 +71,11 @@ Du erreichst mich über LinkedIn oder über eines meiner GitHub-Repositories.
 
 ---
 
-🧰 Technologien, mit denen ich arbeite bzw. gearbeitet habe
+🧰 Grober Einblick in die Technologien, mit denen ich arbeite 
 
-Microsoft Power Platform (Power Automate, Power Apps, Power FX)
+Microsoft Power Platform (Power Automate, Power Apps, Power FX,   )
 
-Dynamics 365 Sales & Business Central
+Dynamics 365 Sales & Customer Insights 
 
 n8n (Workflow Automation)
 
@@ -103,4 +103,6 @@ KI-gestützte PDF-Verarbeitung & Lead-Erkennung
 
 Low-Code-Templates & Prozessdokumentation
 
+Kingswaysoft 
 
+Uvm.  
