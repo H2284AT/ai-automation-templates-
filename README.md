@@ -1,39 +1,106 @@
 # ai-automation-templates-
 
-# 👋 Hi, I'm Herbert Steindl
+👋 Hallo, ich bin Herbert
 
-I work at the intersection of requirements and implementation.
-My focus is on technical structuring, automation and pragmatic solutions – especially in environments where reliability and maintainability matter.
+Ich arbeite an der Schnittstelle zwischen Anforderung und Umsetzung. Mein Fokus liegt auf technischer Strukturierung, Automatisierung und pragmatischen Lösungen – besonders in Umgebungen, in denen Verlässlichkeit und Wartbarkeit zählen.
 
----
+Hier auf GitHub stelle ich Vorlagen für automatisierte Abläufe zur Verfügung. Diese richten sich an Entwickler:innen, Praktiker:innen und Organisationen, die funktionale und leicht adaptierbare Lösungen suchen – ohne unnötige Komplexität.
 
-## 🔧 What I do
-
-- Design and implement process automations
-- Create clean, understandable logic structures
-- Support organizations in reducing manual work
-- Build and test technical solutions with long-term usability
 
 ---
 
-## 🧠 Areas of experience
+🔧 Was ich mache
 
-- Automation (logic-based and event-driven)
-- Systems integration and data flow design
-- Process standardization and error minimization
-- Technical consulting in practical environments
+Konzipiere und entwickle Automatisierungsvorlagen
+
+Reduziere manuelle Abläufe durch technische Umsetzung und RPA
+
+Erstelle strukturierte, nachvollziehbare Logik
+
+Unterstütze mit erprobten Lösungen und Best Practices
+
+
 
 ---
 
-## ⚙️ Philosophy
+📁 Was du hier findest
 
-Less noise, more structure. I aim for solutions that do their job quietly and well – with as little overhead as possible.
+Vorlagen für automatisierte Workflows
+
+Ideen für schlanke Systemintegration
+
+Ansätze zur Vereinfachung technischer Prozesse
+
+Repositorien mit Fokus auf Klarheit, Wiederverwendbarkeit und realem Nutzen
+
+
 
 ---
 
-## 📫 Contact
+🧠 Erfahrungsschwerpunkte
 
-You can reach me via LinkedIn or through any of my GitHub repositories.
+Prozessautomatisierung (regelbasiert, datengesteuert, robotergestützt)
 
-> "Working solutions over perfect slides."
- 
+Robotic Process Automation (RPA) zur Ablösung manueller Tätigkeiten
+
+Technische Konzeption & Umsetzung
+
+Systemübergreifende Schnittstellenlogik
+
+Fehlervermeidung durch Struktur & Wiederverwendbarkeit
+
+
+
+---
+
+⚙️ Arbeitsweise
+
+Ich lege Wert auf klare Abläufe, nachvollziehbare Logik und nachhaltige technische Umsetzung. Ziel ist Stabilität statt Show.
+
+
+---
+
+📫 Kontakt
+
+Du erreichst mich über LinkedIn oder über eines meiner GitHub-Repositories.
+
+> "Funktionierende Lösungen statt perfekter Folien."
+
+
+
+
+---
+
+🧰 Technologien, mit denen ich arbeite bzw. gearbeitet habe
+
+Microsoft Power Platform (Power Automate, Power Apps, Power FX)
+
+Dynamics 365 Sales & Business Central
+
+n8n (Workflow Automation)
+
+Robotic Process Automation (RPA)
+
+XRechnung & ZUGFeRD (inkl. DCP-Vorlagen)
+
+JavaScript (insbesondere für Dynamics 365 Anpassungen)
+
+HTML & CSS
+
+GitHub Pages & Jekyll (statische Webseiten)
+
+Python (grundlegend, z. B. in Automatisierungsskripten)
+
+Docker (inkl. Compose für API-Deployments)
+
+PostgreSQL (Containerintegration & Tests)
+
+REST APIs (Verbindung und Automatisierung über Schnittstellen)
+
+ChatGPT / GPT-Modelle für Textgenerierung und Klassifikation
+
+KI-gestützte PDF-Verarbeitung & Lead-Erkennung
+
+Low-Code-Templates & Prozessdokumentation
+
+
