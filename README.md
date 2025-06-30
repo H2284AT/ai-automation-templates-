@@ -25,7 +25,7 @@ Unterstütze mit erprobten Lösungen und Best Practices
 
 📁 Was du hier findest
 
-Vorlagen für automatisierte Workflows
+Vorlagen für automatisierte Workflows (Eigenentwicklungen, aber auch von Dritten)
 
 Ideen für schlanke Systemintegration
 
