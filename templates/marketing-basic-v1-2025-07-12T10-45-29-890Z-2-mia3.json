@@ -1,0 +1,112 @@
+{
+  "name": "Marketing Automation - Basic",
+  "description": "Automated marketing workflow for business operations. This template handles marketing processes efficiently.",
+  "tags": [
+    "marketing",
+    "basic",
+    "ai-generated",
+    "automated"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Marketing Processing Engine\ntry {\n  const inputData = $json;\n  const ts = new Date().toISOString();\n\n  console.log('Processing Marketing data:', inputData);\n\n  const result = {\n    status     : 'success',\n    processedAt: ts,\n    category   : 'Marketing',\n    subcategory: 'Business Operations',\n    data       : inputData,\n    processed  : true,\n    workflow   : 'Marketing Automation - Basic'\n  };\n\n  console.log('Marketing processing completed successfully');\n  return { json: result };\n\n} catch (error) {\n  console.error('Marketing processing error:', error);\n  return {\n    json: {\n      status : 'error',\n      error  : error.message,\n      ts     : new Date().toISOString(),\n      category: 'Marketing'\n    }\n  };\n}"
+      },
+      "name": "Marketing Processor",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ],
+      "id": "marketing-processor"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "success",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "name": "Success Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        680,
+        300
+      ],
+      "id": "success-check"
+    }
+  ],
+  "connections": {
+    "Marketing Webhook": {
+      "main": [
+        [
+          {
+            "node": "Marketing Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Marketing Processor": {
+      "main": [
+        [
+          {
+            "node": "Success Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "author": "AI Template Generator",
+    "created": "2025-07-12T10:45:29.833Z",
+    "aiGenerated": true,
+    "templateNumber": 2,
+    "totalTemplates": 3
+  },
+  "validation": {
+    "validated": true,
+    "qualityScore": 0.9999999999999999,
+    "validationPassed": true
+  }
+}
