@@ -1,0 +1,63 @@
+{
+  "name": "sales_basic_v1_automated-lead-capture-and-processing-workflow",
+  "displayName": "Sales automated lead capture and processing workflow (basic)",
+  "description": "Sales automated lead capture and processing workflow automation workflow (basic level). 3 nodes, 5-10 Minuten setup time.",
+  "readme": "# Sales automated lead capture and processing workflow (basic)\n\n## 🚀 Übersicht\n\nEinfacher Einstiegs-Workflow für grundlegende Automatisierung\n\n**Template-Name:** `sales_basic_v1_automated-lead-capture-and-processing-workflow`  \n**Kategorie:** Sales  \n**Komplexität:** BASIC (Level 1/3)  \n**Version:** v1  \n**KI-Modell:** gpt-4-turbo\n\n## 📊 Template-Details\n\n| **Eigenschaft** | **Wert** |\n|------------------|----------|\n| **Nodes** | 3 |\n| **Setup-Zeit** | 5-10 Minuten |\n| **Zielgruppe** | Anfänger-freundlich |\n| **Voraussetzungen** | Keine Vorkenntnisse erforderlich |\n\n## 🎯 Funktionalität\n\nAutomatisiert sales-Prozesse durch:\n- ✅ Webhook-basierte Datenaufnahme\n- ✅ Intelligente Verarbeitung und Validierung  \n- ✅ Automatische Weiterleitung bei Erfolg\n\n\n\n## 📋 Benutzer-Anleitung\n\n### 🎯 Was dieser Workflow macht\nAutomatisiert Ihre sales-Prozesse durch:\n• Empfang von Daten über Webhook\n• Intelligente Verarbeitung und Validierung  \n• Automatische Weiterleitung bei Erfolg\n\n### 👤 Für wen ist das\n**Anfänger-freundlich** - Keine Vorkenntnisse erforderlich\n\n### ⚡ So verwenden Sie den Workflow\n\n#### 1️⃣ AKTIVIERUNG\n- Workflow in N8N öffnen und auf \"Aktivieren\" klicken\n- Webhook-URL aus dem ersten Node kopieren\n\n#### 2️⃣ DATEN SENDEN\n- POST-Request an die Webhook-URL senden\n- JSON-Format verwenden:\n```json\n{\n  \"data\": \"Ihre sales-Daten\",\n  \"priority\": \"normal\",\n  \"source\": \"Ihr System\"\n}\n```\n\n#### 3️⃣ ERGEBNIS PRÜFEN\n- Workflow-Ausführungen im N8N Dashboard überwachen\n- Bei Erfolg: Status \"success\" in den Logs\n- Bei Fehlern: Detaillierte Fehlermeldungen verfügbar\n\n**⏱️ Setup-Zeit:** 5-10 Minuten  \n**🔧 Anpassungen:** Webhook-Pfad und Verarbeitungslogik nach Bedarf ändern  \n**📞 Support:** Community-Forum für Fragen und Hilfe\n\n## 🔧 Technische Setup-Anleitung\n\n### ⚙️ System-Anforderungen\n- **N8N Version:** 1.0+ \n- **Node-Types:** webhook, function, if\n- **Berechtigungen:** Workflow aktivieren/deaktivieren\n- **Speicher:** Minimal (3 Nodes)\n\n### 🚀 Installation & Konfiguration\n\n#### 1️⃣ IMPORT\n- Template-JSON in N8N importieren\n- Workflow-Name anpassen falls gewünscht: `sales_basic_v1_automated-lead-capture-and-processing-workflow`\n- Tags hinzufügen für bessere Organisation\n\n#### 2️⃣ WEBHOOK-KONFIGURATION\n- Webhook-Node öffnen\n- **Pfad:** `sales-automated`\n- **Methode:** POST\n- **Response-Mode:** \"onReceived\"\n\n#### 3️⃣ FUNCTION-NODE ANPASSUNG\n- Verarbeitungslogik nach Business-Rules anpassen\n- Logging-Level je nach Umgebung setzen\n- Error-Handling für spezifische Use-Cases erweitern\n\n#### 4️⃣ IF-NODE KONFIGURATION\n- **Success-Bedingung:** `{{ $json.status }} === 'success'`\n- Erweiterte Bedingungen bei Bedarf hinzufügen\n- Routing für Error-Cases definieren\n\n## 🏗️ Workflow-Struktur\n\n### Node-Übersicht\n\n1. **Sales Webhook** - HTTP-Trigger\n2. **Sales Processor** - Datenverarbeitung\n3. **Success Check** - Erfolgsvalidierung\n\n\n## 📈 Metadaten\n\n- **Version:** v1\n- **Autor:** H.Steindl\n- **Erstellt:** 2025-07-13T05:57:59.796Z\n- **Produktionsreif:** Ja (gpt-4-turbo)\n- **Template-Nummer:** 1 von 3\n\n## 🏷️ Tags\n\n`sales`, `basic`, `ai-generated`, `automated`, `level-1`, `nodes-3`\n\n---\n\n*Viel Erfolg bei der Umsetzung, bitte das Urheberrecht beachten*\n",
+  "userInstructions": "Siehe README.md für detaillierte Anweisungen: sales_basic_v1_automated-lead-capture-and-processing-workflow",
+  "technicalInstructions": "Siehe README.md für technische Setup-Anleitung: sales_basic_v1_automated-lead-capture-and-processing-workflow",
+  "tags": [
+    "sales",
+    "automated",
+    "basic",
+    "ai-generated",
+    "automated",
+    "level-1",
+    "nodes-3"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Sales",
+  "complexity": "basic",
+  "complexityLevel": 1,
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automated",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Enhanced AI Template Generator",
+    "created": "2025-07-13T05:57:59.796Z",
+    "aiGenerated": true,
+    "aiModel": "gpt-4-turbo",
+    "templateNumber": 1,
+    "totalTemplates": 3,
+    "nodeCount": 3,
+    "setupTime": "5-10 Minuten",
+    "technicalLevel": "Anfänger-freundlich",
+    "namingConvention": "kategorie_level_version_was-tut-der-flow-etwas-genauer",
+    "enhancement": {
+      "hasDescription": true,
+      "hasUserInstructions": true,
+      "hasTechnicalInstructions": true,
+      "hasComplexityLevels": true,
+      "hasReadme": true,
+      "hasNewNaming": true
+    }
+  }
+}
