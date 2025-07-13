@@ -1,0 +1,63 @@
+{
+  "name": "sales_basic_v1_pipeline-management_essential-workflow-automation_HS459.FNMSW",
+  "displayName": "Sales pipeline management essential workflow automation (basic)",
+  "description": "AI-generated Sales pipeline management automation using essential workflow automation approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "sales",
+    "pipeline-management",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-220",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Sales",
+  "complexity": "basic",
+  "focusArea": "pipeline-management",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS459.FNMSW",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-pipeline-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales pipeline management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-pipeline-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T09:42:41.095Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "220",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "pipeline-management",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 1,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8959300937794201
+    }
+  }
+}
