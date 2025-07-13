@@ -1,0 +1,63 @@
+{
+  "name": "rpa_basic_v1_report-generation_essential-workflow-automation_HS485.LWVP1",
+  "displayName": "RPA report generation essential workflow automation (basic)",
+  "description": "AI-generated RPA report generation automation using essential workflow automation approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "rpa",
+    "report-generation",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-219",
+    "nodes-4"
+  ],
+  "category": "Business Operations",
+  "subcategory": "RPA",
+  "complexity": "basic",
+  "focusArea": "report-generation",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS485.LWVP1",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "rpa-report-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "RPA report generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "rpa-report-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T09:40:14.133Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "219",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "report-generation",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8454376877108188
+    }
+  }
+}
