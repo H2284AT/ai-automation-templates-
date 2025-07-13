@@ -1,0 +1,63 @@
+{
+  "name": "development_basic_v1_exec211_security-scanning_streamlined-integration",
+  "displayName": "Development security scanning streamlined integration (basic)",
+  "description": "AI-generated Development security scanning automation using streamlined integration approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "development",
+    "security-scanning",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-211",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Development",
+  "complexity": "basic",
+  "focusArea": "security-scanning",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "211",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "development-security-scanning",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Development security scanning Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "development-security-scanning-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T07:19:59.298Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "211",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "security-scanning",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 1,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.717506296371954
+    }
+  }
+}
