@@ -1,0 +1,63 @@
+{
+  "name": "rpa_basic_v1_exec214_exception-handling_essential-workflow-automation",
+  "displayName": "RPA exception handling essential workflow automation (basic)",
+  "description": "AI-generated RPA exception handling automation using essential workflow automation approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "rpa",
+    "exception-handling",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-214",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "RPA",
+  "complexity": "basic",
+  "focusArea": "exception-handling",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "214",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "rpa-exception-handling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "RPA exception handling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "rpa-exception-handling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T07:20:19.701Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "214",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "exception-handling",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 7,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.9944711797362868
+    }
+  }
+}
