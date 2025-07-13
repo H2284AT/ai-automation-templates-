@@ -1,0 +1,63 @@
+{
+  "name": "development_basic_v1_exec210_code-review_basic-data-collector",
+  "displayName": "Development code review basic data collector (basic)",
+  "description": "AI-generated Development code review automation using basic data collector approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "development",
+    "code-review",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-210",
+    "nodes-4"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Development",
+  "complexity": "basic",
+  "focusArea": "code-review",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "210",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "development-code-review",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Development code review Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "development-code-review-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T06:59:10.777Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "210",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "code-review",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.9591962052160764
+    }
+  }
+}
