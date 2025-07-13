@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_exec209_campaign-management_simple-webhook-processor",
+  "displayName": "Marketing campaign management simple webhook processor (basic)",
+  "description": "AI-generated Marketing campaign management automation using simple webhook processor approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "campaign-management",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-209",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "campaign-management",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "209",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-campaign-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing campaign management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-campaign-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T06:57:36.514Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "209",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "campaign-management",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 2,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.8214678114836518
+    }
+  }
+}
