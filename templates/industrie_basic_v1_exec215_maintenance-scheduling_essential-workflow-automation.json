@@ -1,0 +1,63 @@
+{
+  "name": "industrie_basic_v1_exec215_maintenance-scheduling_essential-workflow-automation",
+  "displayName": "Industrie maintenance scheduling essential workflow automation (basic)",
+  "description": "AI-generated Industrie maintenance scheduling automation using essential workflow automation approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "industrie",
+    "maintenance-scheduling",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-215",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Industrie",
+  "complexity": "basic",
+  "focusArea": "maintenance-scheduling",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "215",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "industrie-maintenance-scheduling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Industrie maintenance scheduling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "industrie-maintenance-scheduling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-13T09:18:58.790Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "215",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "maintenance-scheduling",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.9977827615379663
+    }
+  }
+}
