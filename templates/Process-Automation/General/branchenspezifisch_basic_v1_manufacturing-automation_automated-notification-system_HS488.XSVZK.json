@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_basic_v1_manufacturing-automation_automated-notification-system_HS488.XSVZK",
+  "displayName": "Branchenspezifisch manufacturing automation automated notification system (basic)",
+  "description": "AI-generated Branchenspezifisch manufacturing automation automation using automated notification system approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "manufacturing-automation",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-264",
+    "nodes-4"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "manufacturing-automation",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS488.XSVZK",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-manufacturing-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch manufacturing automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-manufacturing-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "264",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "manufacturing-automation",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.7640921871613304
+    }
+  }
+}
