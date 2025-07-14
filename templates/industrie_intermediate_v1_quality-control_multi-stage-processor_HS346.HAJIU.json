@@ -1,0 +1,44 @@
+{
+  "name": "industrie_intermediate_v1_quality-control_multi-stage-processor_HS346.HAJIU",
+  "displayName": "Industrie quality control (intermediate)",
+  "description": "AI-generated Industrie automation (intermediate level)",
+  "tags": [
+    "industrie",
+    "quality-control",
+    "intermediate",
+    "professional"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Industrie",
+  "complexity": "intermediate",
+  "focusArea": "quality-control",
+  "workflowConcept": "multi-stage-processor",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "industrie-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Industrie quality-control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "industrie-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:15:04.105Z",
+    "nodeCount": 7,
+    "setupTime": "20-40 Minuten"
+  },
+  "templateId": "HS346.HAJIU"
+}
