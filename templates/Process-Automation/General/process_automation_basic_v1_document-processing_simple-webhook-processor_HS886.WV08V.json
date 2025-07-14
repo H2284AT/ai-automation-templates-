@@ -1,0 +1,63 @@
+{
+  "name": "process_automation_basic_v1_document-processing_simple-webhook-processor_HS886.WV08V",
+  "displayName": "Process-Automation document processing simple webhook processor (basic)",
+  "description": "AI-generated Process-Automation document processing automation using simple webhook processor approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "process_automation",
+    "document-processing",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-258",
+    "nodes-5"
+  ],
+  "category": "Process-Automation",
+  "subcategory": "Process-Automation",
+  "complexity": "basic",
+  "focusArea": "document-processing",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS886.WV08V",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "process-automation-document-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Process-Automation document processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "process-automation-document-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:34:06.188Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "258",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "document-processing",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.789006349962357
+    }
+  }
+}
