@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_basic_v1_data-entry-automation_automated-notification-system_HS407.XI6GQ",
+  "displayName": "Prozessautomatisierung data entry automation automated notification system (basic)",
+  "description": "AI-generated Prozessautomatisierung data entry automation automation using automated notification system approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "data-entry-automation",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-266",
+    "nodes-3"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "data-entry-automation",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS407.XI6GQ",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-data-entry-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung data entry automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-data-entry-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "266",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "data-entry-automation",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.8302732562229391
+    }
+  }
+}
