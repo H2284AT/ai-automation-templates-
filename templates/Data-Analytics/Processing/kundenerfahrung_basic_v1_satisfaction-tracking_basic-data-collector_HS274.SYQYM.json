@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_basic_v1_satisfaction-tracking_basic-data-collector_HS274.SYQYM",
+  "displayName": "Kundenerfahrung satisfaction tracking basic data collector (basic)",
+  "description": "AI-generated Kundenerfahrung satisfaction tracking automation using basic data collector approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "satisfaction-tracking",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-274",
+    "nodes-5"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "basic",
+  "focusArea": "satisfaction-tracking",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS274.SYQYM",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-satisfaction-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung satisfaction tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-satisfaction-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "274",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "satisfaction-tracking",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.8959469389053398
+    }
+  }
+}
