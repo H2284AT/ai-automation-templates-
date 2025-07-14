@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_basic_v1_feedback-processing_streamlined-integration_HS972.GJO02",
+  "displayName": "Kundenerfahrung feedback processing streamlined integration (basic)",
+  "description": "AI-generated Kundenerfahrung feedback processing automation using streamlined integration approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "feedback-processing",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-268",
+    "nodes-5"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "basic",
+  "focusArea": "feedback-processing",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS972.GJO02",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-feedback-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung feedback processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-feedback-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "268",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "feedback-processing",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.8719451486162059
+    }
+  }
+}
