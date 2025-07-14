@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_email-marketing_streamlined-integration_HS218.TIK9U",
+  "displayName": "Marketing email marketing streamlined integration (basic)",
+  "description": "AI-generated Marketing email marketing automation using streamlined integration approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "email-marketing",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-243",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "email-marketing",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS218.TIK9U",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-email-marketing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing email marketing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-email-marketing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:05.149Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "243",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "email-marketing",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.7998371552572842
+    }
+  }
+}
