@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_monitoring-automation_simple-webhook-processor_HS402.VI39R",
+  "displayName": "Technische-Infrastruktur monitoring automation simple webhook processor (basic)",
+  "description": "AI-generated Technische-Infrastruktur monitoring automation automation using simple webhook processor approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "monitoring-automation",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-278",
+    "nodes-4"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "monitoring-automation",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS402.VI39R",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-monitoring-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur monitoring automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-monitoring-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "278",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "monitoring-automation",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.8817576672308682
+    }
+  }
+}
