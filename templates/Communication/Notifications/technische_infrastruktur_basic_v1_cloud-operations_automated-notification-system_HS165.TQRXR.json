@@ -1,0 +1,63 @@
+{
+  "name": "technische_infrastruktur_basic_v1_cloud-operations_automated-notification-system_HS165.TQRXR",
+  "displayName": "Technische-Infrastruktur cloud operations automated notification system (basic)",
+  "description": "AI-generated Technische-Infrastruktur cloud operations automation using automated notification system approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "cloud-operations",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-262",
+    "nodes-4"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "cloud-operations",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS165.TQRXR",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-cloud-operations",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur cloud operations Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-cloud-operations-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:48:38.171Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "262",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "cloud-operations",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.8770721209271017
+    }
+  }
+}
