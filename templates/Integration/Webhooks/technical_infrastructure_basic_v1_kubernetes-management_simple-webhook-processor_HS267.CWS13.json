@@ -1,0 +1,63 @@
+{
+  "name": "technical_infrastructure_basic_v1_kubernetes-management_simple-webhook-processor_HS267.CWS13",
+  "displayName": "Technical-Infrastructure kubernetes management simple webhook processor (basic)",
+  "description": "AI-generated Technical-Infrastructure kubernetes management automation using simple webhook processor approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technical_infrastructure",
+    "kubernetes-management",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-258",
+    "nodes-3"
+  ],
+  "category": "Technical-Infrastructure",
+  "subcategory": "Technical-Infrastructure",
+  "complexity": "basic",
+  "focusArea": "kubernetes-management",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS267.CWS13",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technical-infrastructure-kubernetes-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technical-Infrastructure kubernetes management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technical-infrastructure-kubernetes-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:34:06.188Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "258",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "kubernetes-management",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.7459119245360014
+    }
+  }
+}
