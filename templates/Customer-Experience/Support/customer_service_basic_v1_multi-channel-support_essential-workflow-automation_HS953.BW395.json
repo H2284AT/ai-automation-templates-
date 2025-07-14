@@ -1,0 +1,63 @@
+{
+  "name": "customer_service_basic_v1_multi-channel-support_essential-workflow-automation_HS953.BW395",
+  "displayName": "Customer Service multi channel support essential workflow automation (basic)",
+  "description": "AI-generated Customer Service multi channel support automation using essential workflow automation approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "customer_service",
+    "multi-channel-support",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-243",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Customer Service",
+  "complexity": "basic",
+  "focusArea": "multi-channel-support",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS953.BW395",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "customer-service-multi-channel-support",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Customer Service multi channel support Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "customer service-multi-channel-support-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:05.149Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "243",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "multi-channel-support",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8677023622369948
+    }
+  }
+}
