@@ -1,0 +1,63 @@
+{
+  "name": "geschaeftsprozesse_basic_v1_sales-automation_streamlined-integration_HS361.YA2BD",
+  "displayName": "Geschaeftsprozesse sales automation streamlined integration (basic)",
+  "description": "AI-generated Geschaeftsprozesse sales automation automation using streamlined integration approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "sales-automation",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-262",
+    "nodes-3"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "basic",
+  "focusArea": "sales-automation",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS361.YA2BD",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-sales-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse sales automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-sales-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:48:38.171Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "262",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "sales-automation",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.8763554147557535
+    }
+  }
+}
