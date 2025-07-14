@@ -1,0 +1,53 @@
+{
+  "name": "marketing_intermediate_v1_influencer-management_intelligent-routing-system_HS142.GZZXZ",
+  "displayName": "Marketing influencer management (intermediate)",
+  "description": "AI-generated Marketing influencer management automation using intelligent routing system approach (intermediate level). 7 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "marketing",
+    "influencer-management",
+    "intelligent-routing-system",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-8334",
+    "nodes-7"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "intermediate",
+  "focusArea": "influencer-management",
+  "workflowConcept": "intelligent-routing-system",
+  "internalTemplateId": "8334",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-influencer-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing influencer management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-influencer-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:24:58.321Z",
+    "templateId": "8334",
+    "nodeCount": 7,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "influencer-management",
+    "workflowConcept": "intelligent-routing-system"
+  },
+  "templateId": "HS142.GZZXZ"
+}
