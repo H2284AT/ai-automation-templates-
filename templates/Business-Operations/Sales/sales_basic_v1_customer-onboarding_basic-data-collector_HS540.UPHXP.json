@@ -1,0 +1,53 @@
+{
+  "name": "sales_basic_v1_customer-onboarding_basic-data-collector_HS540.UPHXP",
+  "displayName": "Sales customer onboarding (basic)",
+  "description": "AI-generated Sales customer onboarding automation using basic data collector approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "sales",
+    "customer-onboarding",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-8331",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Sales",
+  "complexity": "basic",
+  "focusArea": "customer-onboarding",
+  "workflowConcept": "basic-data-collector",
+  "internalTemplateId": "8331",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-customer-onboarding",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales customer onboarding Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-customer-onboarding-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:24:58.321Z",
+    "templateId": "8331",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "customer-onboarding",
+    "workflowConcept": "basic-data-collector"
+  },
+  "templateId": "HS540.UPHXP"
+}
