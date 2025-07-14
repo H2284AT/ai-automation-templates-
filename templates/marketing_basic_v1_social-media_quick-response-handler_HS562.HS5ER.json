@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_social-media_quick-response-handler_HS562.HS5ER",
+  "displayName": "Marketing social media quick response handler (basic)",
+  "description": "AI-generated Marketing social media automation using quick response handler approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "social-media",
+    "quick-response-handler",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-239",
+    "nodes-3"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "social-media",
+  "workflowConcept": "quick-response-handler",
+  "templateId": "HS562.HS5ER",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-social-media",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing social media Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-social-media-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:43:44.642Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "239",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "social-media",
+    "workflowConcept": "quick-response-handler",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 2,
+      "gapDetection": true,
+      "conceptualDesign": "quick-response-handler",
+      "qualityScore": 0.9008067291675874
+    }
+  }
+}
