@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_docker-automation_automated-notification-system_HS329.UFSXH",
+  "displayName": "Technische-Infrastruktur docker automation automated notification system (basic)",
+  "description": "AI-generated Technische-Infrastruktur docker automation automation using automated notification system approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "docker-automation",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-264",
+    "nodes-5"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "docker-automation",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS329.UFSXH",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-docker-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur docker automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-docker-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "264",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "docker-automation",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.8219912073119069
+    }
+  }
+}
