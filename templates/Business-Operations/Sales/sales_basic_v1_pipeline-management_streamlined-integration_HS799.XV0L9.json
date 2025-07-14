@@ -1,0 +1,63 @@
+{
+  "name": "sales_basic_v1_pipeline-management_streamlined-integration_HS799.XV0L9",
+  "displayName": "Sales pipeline management streamlined integration (basic)",
+  "description": "AI-generated Sales pipeline management automation using streamlined integration approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "sales",
+    "pipeline-management",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-242",
+    "nodes-4"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Sales",
+  "complexity": "basic",
+  "focusArea": "pipeline-management",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS799.XV0L9",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-pipeline-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales pipeline management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-pipeline-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:52:54.282Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "242",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "pipeline-management",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 6,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.8838850727937575
+    }
+  }
+}
