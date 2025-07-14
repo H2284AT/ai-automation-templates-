@@ -1,0 +1,44 @@
+{
+  "name": "rpa_advanced_v1_document-processing_complex-integration-matrix_HS922.KHICC",
+  "displayName": "RPA document processing (advanced)",
+  "description": "AI-generated RPA automation (advanced level)",
+  "tags": [
+    "rpa",
+    "document-processing",
+    "advanced",
+    "professional"
+  ],
+  "category": "Business Operations",
+  "subcategory": "RPA",
+  "complexity": "advanced",
+  "focusArea": "document-processing",
+  "workflowConcept": "complex-integration-matrix",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "rpa-document-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "RPA document-processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "rpa-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:18:31.196Z",
+    "nodeCount": 10,
+    "setupTime": "45-90 Minuten"
+  },
+  "templateId": "HS922.KHICC"
+}
