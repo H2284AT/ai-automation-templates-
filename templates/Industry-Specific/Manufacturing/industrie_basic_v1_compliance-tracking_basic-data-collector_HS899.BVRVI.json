@@ -1,0 +1,63 @@
+{
+  "name": "industrie_basic_v1_compliance-tracking_basic-data-collector_HS899.BVRVI",
+  "displayName": "Industrie compliance tracking basic data collector (basic)",
+  "description": "AI-generated Industrie compliance tracking automation using basic data collector approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "industrie",
+    "compliance-tracking",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-246",
+    "nodes-4"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Industrie",
+  "complexity": "basic",
+  "focusArea": "compliance-tracking",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS899.BVRVI",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "industrie-compliance-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Industrie compliance tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "industrie-compliance-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:54.386Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "246",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "compliance-tracking",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.8530164945240126
+    }
+  }
+}
