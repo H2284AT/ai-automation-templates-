@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_monitoring-automation_essential-workflow-automation_HS040.TIMEV",
+  "displayName": "Technische-Infrastruktur monitoring automation essential workflow automation (basic)",
+  "description": "AI-generated Technische-Infrastruktur monitoring automation automation using essential workflow automation approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "monitoring-automation",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-267",
+    "nodes-4"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "monitoring-automation",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS040.TIMEV",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-monitoring-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur monitoring automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-monitoring-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "267",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "monitoring-automation",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.836086151806653
+    }
+  }
+}
