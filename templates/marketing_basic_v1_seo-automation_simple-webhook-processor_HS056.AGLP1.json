@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_seo-automation_simple-webhook-processor_HS056.AGLP1",
+  "displayName": "Marketing seo automation simple webhook processor (basic)",
+  "description": "AI-generated Marketing seo automation automation using simple webhook processor approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "seo-automation",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-241",
+    "nodes-4"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "seo-automation",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS056.AGLP1",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-seo-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing seo automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-seo-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:45:32.909Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "241",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "seo-automation",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.7897205576149875
+    }
+  }
+}
