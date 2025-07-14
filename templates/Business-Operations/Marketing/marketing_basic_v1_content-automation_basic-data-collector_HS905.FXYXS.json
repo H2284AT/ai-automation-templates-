@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_content-automation_basic-data-collector_HS905.FXYXS",
+  "displayName": "Marketing content automation basic data collector (basic)",
+  "description": "AI-generated Marketing content automation automation using basic data collector approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "content-automation",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-247",
+    "nodes-3"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "content-automation",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS905.FXYXS",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-content-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing content automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-content-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:57:11.210Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "247",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "content-automation",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.7581020057375434
+    }
+  }
+}
