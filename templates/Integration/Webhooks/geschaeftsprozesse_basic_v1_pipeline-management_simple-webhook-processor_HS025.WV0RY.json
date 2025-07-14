@@ -1,0 +1,63 @@
+{
+  "name": "geschaeftsprozesse_basic_v1_pipeline-management_simple-webhook-processor_HS025.WV0RY",
+  "displayName": "Geschaeftsprozesse pipeline management simple webhook processor (basic)",
+  "description": "AI-generated Geschaeftsprozesse pipeline management automation using simple webhook processor approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "pipeline-management",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-259",
+    "nodes-4"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "basic",
+  "focusArea": "pipeline-management",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS025.WV0RY",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-pipeline-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse pipeline management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-pipeline-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:39:55.514Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "259",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "pipeline-management",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.8966889971697946
+    }
+  }
+}
