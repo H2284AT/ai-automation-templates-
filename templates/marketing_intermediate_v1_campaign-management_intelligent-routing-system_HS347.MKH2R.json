@@ -1,0 +1,44 @@
+{
+  "name": "marketing_intermediate_v1_campaign-management_intelligent-routing-system_HS347.MKH2R",
+  "displayName": "Marketing campaign management (intermediate)",
+  "description": "AI-generated Marketing automation (intermediate level)",
+  "tags": [
+    "marketing",
+    "campaign-management",
+    "intermediate",
+    "professional"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "intermediate",
+  "focusArea": "campaign-management",
+  "workflowConcept": "intelligent-routing-system",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-campaign-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing campaign-management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:15:04.105Z",
+    "nodeCount": 7,
+    "setupTime": "20-40 Minuten"
+  },
+  "templateId": "HS347.MKH2R"
+}
