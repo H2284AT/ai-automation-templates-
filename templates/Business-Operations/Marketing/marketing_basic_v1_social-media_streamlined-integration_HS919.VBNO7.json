@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_social-media_streamlined-integration_HS919.VBNO7",
+  "displayName": "Marketing social media streamlined integration (basic)",
+  "description": "AI-generated Marketing social media automation using streamlined integration approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "social-media",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-246",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "social-media",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS919.VBNO7",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-social-media",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing social media Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-social-media-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:54.386Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "246",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "social-media",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.8305554717964339
+    }
+  }
+}
