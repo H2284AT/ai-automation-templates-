@@ -1,0 +1,63 @@
+{
+  "name": "customer_experience_basic_v1_escalation-management_automated-notification-system_HS262.EU5ZN",
+  "displayName": "Customer-Experience escalation management automated notification system (basic)",
+  "description": "AI-generated Customer-Experience escalation management automation using automated notification system approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "customer_experience",
+    "escalation-management",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-258",
+    "nodes-5"
+  ],
+  "category": "Customer-Experience",
+  "subcategory": "Customer-Experience",
+  "complexity": "basic",
+  "focusArea": "escalation-management",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS262.EU5ZN",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "customer-experience-escalation-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Customer-Experience escalation management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "customer-experience-escalation-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:34:06.188Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "258",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "escalation-management",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.9129396502194325
+    }
+  }
+}
