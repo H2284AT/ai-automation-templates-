@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_basic_v1_production-monitoring_essential-workflow-automation_HS025.VD4GU",
+  "displayName": "Branchenspezifisch production monitoring essential workflow automation (basic)",
+  "description": "AI-generated Branchenspezifisch production monitoring automation using essential workflow automation approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "production-monitoring",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-274",
+    "nodes-3"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "production-monitoring",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS025.VD4GU",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-production-monitoring",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch production monitoring Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-production-monitoring-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "274",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "production-monitoring",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.9599601477237759
+    }
+  }
+}
