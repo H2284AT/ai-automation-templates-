@@ -1,0 +1,63 @@
+{
+  "name": "development_basic_v1_security-scanning_basic-data-collector_HS348.OILN6",
+  "displayName": "Development security scanning basic data collector (basic)",
+  "description": "AI-generated Development security scanning automation using basic data collector approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "development",
+    "security-scanning",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-244",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Development",
+  "complexity": "basic",
+  "focusArea": "security-scanning",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS348.OILN6",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "development-security-scanning",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Development security scanning Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "development-security-scanning-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:31.937Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "244",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "security-scanning",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.8444445725971206
+    }
+  }
+}
