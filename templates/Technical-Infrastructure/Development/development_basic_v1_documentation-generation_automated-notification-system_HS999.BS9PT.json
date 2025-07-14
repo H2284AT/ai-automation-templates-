@@ -1,0 +1,53 @@
+{
+  "name": "development_basic_v1_documentation-generation_automated-notification-system_HS999.BS9PT",
+  "displayName": "Development documentation generation (basic)",
+  "description": "AI-generated Development documentation generation automation using automated notification system approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "development",
+    "documentation-generation",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-8336",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Development",
+  "complexity": "basic",
+  "focusArea": "documentation-generation",
+  "workflowConcept": "automated-notification-system",
+  "internalTemplateId": "8336",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "development-documentation-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Development documentation generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "development-documentation-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:24:58.321Z",
+    "templateId": "8336",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "documentation-generation",
+    "workflowConcept": "automated-notification-system"
+  },
+  "templateId": "HS999.BS9PT"
+}
