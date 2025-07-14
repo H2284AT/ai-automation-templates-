@@ -1,0 +1,44 @@
+{
+  "name": "development_basic_v1_ci-cd-automation_automated-notification-system_HS780.TUXUD",
+  "displayName": "Development ci cd automation (basic)",
+  "description": "AI-generated Development automation (basic level)",
+  "tags": [
+    "development",
+    "ci-cd-automation",
+    "basic",
+    "professional"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Development",
+  "complexity": "basic",
+  "focusArea": "ci-cd-automation",
+  "workflowConcept": "automated-notification-system",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "development-ci-cd-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Development ci-cd-automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "development-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:15:04.105Z",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten"
+  },
+  "templateId": "HS780.TUXUD"
+}
