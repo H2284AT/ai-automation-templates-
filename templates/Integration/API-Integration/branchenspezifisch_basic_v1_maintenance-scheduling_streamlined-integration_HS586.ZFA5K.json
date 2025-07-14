@@ -1,0 +1,63 @@
+{
+  "name": "branchenspezifisch_basic_v1_maintenance-scheduling_streamlined-integration_HS586.ZFA5K",
+  "displayName": "Branchenspezifisch maintenance scheduling streamlined integration (basic)",
+  "description": "AI-generated Branchenspezifisch maintenance scheduling automation using streamlined integration approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "maintenance-scheduling",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-262",
+    "nodes-5"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "maintenance-scheduling",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS586.ZFA5K",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-maintenance-scheduling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch maintenance scheduling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-maintenance-scheduling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:48:38.171Z",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "262",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "maintenance-scheduling",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.9863474846414582
+    }
+  }
+}
