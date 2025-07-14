@@ -1,0 +1,63 @@
+{
+  "name": "prozessautomatisierung_basic_v1_task-automation_basic-data-collector_HS318.PE19B",
+  "displayName": "Prozessautomatisierung task automation basic data collector (basic)",
+  "description": "AI-generated Prozessautomatisierung task automation automation using basic data collector approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "task-automation",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-259",
+    "nodes-3"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "task-automation",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS318.PE19B",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-task-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung task automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-task-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T19:39:55.514Z",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "259",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "task-automation",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.9768584855846483
+    }
+  }
+}
