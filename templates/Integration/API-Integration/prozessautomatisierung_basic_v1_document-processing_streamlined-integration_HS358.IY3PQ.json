@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_basic_v1_document-processing_streamlined-integration_HS358.IY3PQ",
+  "displayName": "Prozessautomatisierung document processing streamlined integration (basic)",
+  "description": "AI-generated Prozessautomatisierung document processing automation using streamlined integration approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "document-processing",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-272",
+    "nodes-4"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "document-processing",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS358.IY3PQ",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-document-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung document processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-document-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "272",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "document-processing",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.9971073592960873
+    }
+  }
+}
