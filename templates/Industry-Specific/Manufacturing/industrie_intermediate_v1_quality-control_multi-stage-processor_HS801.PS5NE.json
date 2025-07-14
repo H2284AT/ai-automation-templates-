@@ -1,0 +1,53 @@
+{
+  "name": "industrie_intermediate_v1_quality-control_multi-stage-processor_HS801.PS5NE",
+  "displayName": "Industrie quality control (intermediate)",
+  "description": "AI-generated Industrie quality control automation using multi stage processor approach (intermediate level). 5 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "industrie",
+    "quality-control",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-8337",
+    "nodes-5"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Industrie",
+  "complexity": "intermediate",
+  "focusArea": "quality-control",
+  "workflowConcept": "multi-stage-processor",
+  "internalTemplateId": "8337",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "industrie-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Industrie quality control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "industrie-quality-control-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:24:58.321Z",
+    "templateId": "8337",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "quality-control",
+    "workflowConcept": "multi-stage-processor"
+  },
+  "templateId": "HS801.PS5NE"
+}
