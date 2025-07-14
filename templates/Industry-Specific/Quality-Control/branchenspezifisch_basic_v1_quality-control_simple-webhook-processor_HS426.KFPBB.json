@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_basic_v1_quality-control_simple-webhook-processor_HS426.KFPBB",
+  "displayName": "Branchenspezifisch quality control simple webhook processor (basic)",
+  "description": "AI-generated Branchenspezifisch quality control automation using simple webhook processor approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "quality-control",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-266",
+    "nodes-5"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "quality-control",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS426.KFPBB",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch quality control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-quality-control-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "266",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "quality-control",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.7004701969556454
+    }
+  }
+}
