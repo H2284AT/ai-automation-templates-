@@ -1,0 +1,44 @@
+{
+  "name": "sales_basic_v1_customer-onboarding_simple-webhook-processor_HS351.GEMCF",
+  "displayName": "Sales customer onboarding (basic)",
+  "description": "AI-generated Sales automation (basic level)",
+  "tags": [
+    "sales",
+    "customer-onboarding",
+    "basic",
+    "professional"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Sales",
+  "complexity": "basic",
+  "focusArea": "customer-onboarding",
+  "workflowConcept": "simple-webhook-processor",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-customer-onboarding",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales customer-onboarding Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:18:31.196Z",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten"
+  },
+  "templateId": "HS351.GEMCF"
+}
