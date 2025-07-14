@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_basic_v1_workflow-orchestration_streamlined-integration_HS721.WMU8A",
+  "displayName": "Prozessautomatisierung workflow orchestration streamlined integration (basic)",
+  "description": "AI-generated Prozessautomatisierung workflow orchestration automation using streamlined integration approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "workflow-orchestration",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-267",
+    "nodes-3"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "workflow-orchestration",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS721.WMU8A",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-workflow-orchestration",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung workflow orchestration Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-workflow-orchestration-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "267",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "workflow-orchestration",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.8808602888512138
+    }
+  }
+}
