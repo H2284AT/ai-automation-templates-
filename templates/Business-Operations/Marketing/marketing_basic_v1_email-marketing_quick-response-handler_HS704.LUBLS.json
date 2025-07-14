@@ -1,0 +1,63 @@
+{
+  "name": "marketing_basic_v1_email-marketing_quick-response-handler_HS704.LUBLS",
+  "displayName": "Marketing email marketing quick response handler (basic)",
+  "description": "AI-generated Marketing email marketing automation using quick response handler approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "marketing",
+    "email-marketing",
+    "quick-response-handler",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-244",
+    "nodes-3"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Marketing",
+  "complexity": "basic",
+  "focusArea": "email-marketing",
+  "workflowConcept": "quick-response-handler",
+  "templateId": "HS704.LUBLS",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "marketing-email-marketing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Marketing email marketing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "marketing-email-marketing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T05:54:31.937Z",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "244",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "email-marketing",
+    "workflowConcept": "quick-response-handler",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "quick-response-handler",
+      "qualityScore": 0.865833670977888
+    }
+  }
+}
