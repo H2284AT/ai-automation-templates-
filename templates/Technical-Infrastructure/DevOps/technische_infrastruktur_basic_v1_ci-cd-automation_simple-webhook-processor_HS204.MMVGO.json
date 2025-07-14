@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_ci-cd-automation_simple-webhook-processor_HS204.MMVGO",
+  "displayName": "Technische-Infrastruktur ci cd automation simple webhook processor (basic)",
+  "description": "AI-generated Technische-Infrastruktur ci cd automation automation using simple webhook processor approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "ci-cd-automation",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-275",
+    "nodes-3"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "ci-cd-automation",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS204.MMVGO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-ci-cd-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur ci cd automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-ci-cd-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "275",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "ci-cd-automation",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.9718643777709385
+    }
+  }
+}
