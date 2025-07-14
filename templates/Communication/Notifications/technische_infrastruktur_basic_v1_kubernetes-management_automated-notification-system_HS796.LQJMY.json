@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_kubernetes-management_automated-notification-system_HS796.LQJMY",
+  "displayName": "Technische-Infrastruktur kubernetes management automated notification system (basic)",
+  "description": "AI-generated Technische-Infrastruktur kubernetes management automation using automated notification system approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "kubernetes-management",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-274",
+    "nodes-5"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "kubernetes-management",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS796.LQJMY",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-kubernetes-management",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur kubernetes management Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-kubernetes-management-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "274",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "kubernetes-management",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.8170994264372649
+    }
+  }
+}
