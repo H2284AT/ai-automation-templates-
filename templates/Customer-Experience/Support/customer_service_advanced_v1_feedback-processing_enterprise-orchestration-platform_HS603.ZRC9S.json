@@ -1,0 +1,53 @@
+{
+  "name": "customer_service_advanced_v1_feedback-processing_enterprise-orchestration-platform_HS603.ZRC9S",
+  "displayName": "Customer Service feedback processing (advanced)",
+  "description": "AI-generated Customer Service feedback processing automation using enterprise orchestration platform approach (advanced level). 12 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "customer_service",
+    "feedback-processing",
+    "enterprise-orchestration-platform",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-8335",
+    "nodes-12"
+  ],
+  "category": "Business Operations",
+  "subcategory": "Customer Service",
+  "complexity": "advanced",
+  "focusArea": "feedback-processing",
+  "workflowConcept": "enterprise-orchestration-platform",
+  "internalTemplateId": "8335",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "customer-service-feedback-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Customer Service feedback processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "customer service-feedback-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "created": "2025-07-14T06:24:58.321Z",
+    "templateId": "8335",
+    "nodeCount": 12,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "feedback-processing",
+    "workflowConcept": "enterprise-orchestration-platform"
+  },
+  "templateId": "HS603.ZRC9S"
+}
