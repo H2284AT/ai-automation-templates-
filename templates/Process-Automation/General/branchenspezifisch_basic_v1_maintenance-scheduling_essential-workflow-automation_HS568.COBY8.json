@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_basic_v1_maintenance-scheduling_essential-workflow-automation_HS568.COBY8",
+  "displayName": "Branchenspezifisch maintenance scheduling essential workflow automation (basic)",
+  "description": "AI-generated Branchenspezifisch maintenance scheduling automation using essential workflow automation approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "maintenance-scheduling",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-281",
+    "nodes-4"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "maintenance-scheduling",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS568.COBY8",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-maintenance-scheduling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch maintenance scheduling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-maintenance-scheduling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "281",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "maintenance-scheduling",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.9482313416402341
+    }
+  }
+}
