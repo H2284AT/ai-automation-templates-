@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_intermediate_v1_feedback-processing_multi-stage-processor_HS458.OFDZ4",
+  "displayName": "Kundenerfahrung feedback processing multi stage processor (intermediate)",
+  "description": "AI-generated Kundenerfahrung feedback processing automation using multi stage processor approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "feedback-processing",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-282",
+    "nodes-8"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "intermediate",
+  "focusArea": "feedback-processing",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS458.OFDZ4",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-feedback-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung feedback processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-feedback-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "282",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "feedback-processing",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.9584694813269121
+    }
+  }
+}
