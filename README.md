@@ -2,7 +2,7 @@
 
 👋 Hallo, ich bin Herbert
 
-Ich arbeite an der Schnittstelle zwischen Anforderung und Umsetzung. Mein Fokus liegt auf Consulting, technischer Strukturierung, Automatisierung und pragmatischen Lösungen – besonders in Umgebungen, in denen Verlässlichkeit und Wartbarkeit zählen.
+Ich arbeite an der Schnittstelle zwischen Anforderung und Umsetzung. Mein Fokus liegt auf technischer Strukturierung, Automatisierung und pragmatischen Lösungen – besonders in Umgebungen, in denen Verlässlichkeit und Wartbarkeit zählen.
 
 Hier auf GitHub stelle ich Vorlagen für automatisierte Abläufe zur Verfügung. Diese richten sich an Entwickler:innen, Praktiker:innen und Organisationen, die funktionale und leicht adaptierbare Lösungen suchen – ohne unnötige Komplexität.
 
