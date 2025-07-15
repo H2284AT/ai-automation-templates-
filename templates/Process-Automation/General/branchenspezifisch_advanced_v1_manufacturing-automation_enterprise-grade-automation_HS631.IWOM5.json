@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_advanced_v1_manufacturing-automation_enterprise-grade-automation_HS631.IWOM5",
+  "displayName": "Branchenspezifisch manufacturing automation enterprise grade automation (advanced)",
+  "description": "AI-generated Branchenspezifisch manufacturing automation automation using enterprise grade automation approach (advanced level). 12 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "manufacturing-automation",
+    "enterprise-grade-automation",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-285",
+    "nodes-12"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "advanced",
+  "focusArea": "manufacturing-automation",
+  "workflowConcept": "enterprise-grade-automation",
+  "templateId": "HS631.IWOM5",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-manufacturing-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch manufacturing automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-manufacturing-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "285",
+    "nodeCount": 12,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "manufacturing-automation",
+    "workflowConcept": "enterprise-grade-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "enterprise-grade-automation",
+      "qualityScore": 0.9148057277427278
+    }
+  }
+}
