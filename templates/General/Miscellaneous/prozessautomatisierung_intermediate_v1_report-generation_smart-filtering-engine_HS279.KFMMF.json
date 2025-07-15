@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_intermediate_v1_report-generation_smart-filtering-engine_HS279.KFMMF",
+  "displayName": "Prozessautomatisierung report generation smart filtering engine (intermediate)",
+  "description": "AI-generated Prozessautomatisierung report generation automation using smart filtering engine approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "report-generation",
+    "smart-filtering-engine",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-289",
+    "nodes-6"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "intermediate",
+  "focusArea": "report-generation",
+  "workflowConcept": "smart-filtering-engine",
+  "templateId": "HS279.KFMMF",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-report-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung report generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-report-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "289",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "report-generation",
+    "workflowConcept": "smart-filtering-engine",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "smart-filtering-engine",
+      "qualityScore": 0.8249258101285077
+    }
+  }
+}
