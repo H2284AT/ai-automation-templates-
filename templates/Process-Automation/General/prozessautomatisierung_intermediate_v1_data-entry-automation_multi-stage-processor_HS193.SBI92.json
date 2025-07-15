@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_intermediate_v1_data-entry-automation_multi-stage-processor_HS193.SBI92",
+  "displayName": "Prozessautomatisierung data entry automation multi stage processor (intermediate)",
+  "description": "AI-generated Prozessautomatisierung data entry automation automation using multi stage processor approach (intermediate level). 5 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "data-entry-automation",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-286",
+    "nodes-5"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "intermediate",
+  "focusArea": "data-entry-automation",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS193.SBI92",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-data-entry-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung data entry automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-data-entry-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "286",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "data-entry-automation",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.9278531270229706
+    }
+  }
+}
