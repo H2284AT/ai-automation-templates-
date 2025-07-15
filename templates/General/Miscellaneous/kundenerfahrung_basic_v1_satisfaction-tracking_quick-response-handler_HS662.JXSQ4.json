@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_basic_v1_satisfaction-tracking_quick-response-handler_HS662.JXSQ4",
+  "displayName": "Kundenerfahrung satisfaction tracking quick response handler (basic)",
+  "description": "AI-generated Kundenerfahrung satisfaction tracking automation using quick response handler approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "satisfaction-tracking",
+    "quick-response-handler",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-288",
+    "nodes-4"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "basic",
+  "focusArea": "satisfaction-tracking",
+  "workflowConcept": "quick-response-handler",
+  "templateId": "HS662.JXSQ4",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-satisfaction-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung satisfaction tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-satisfaction-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "288",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "satisfaction-tracking",
+    "workflowConcept": "quick-response-handler",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "quick-response-handler",
+      "qualityScore": 0.9523756982603466
+    }
+  }
+}
