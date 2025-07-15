@@ -1,0 +1,62 @@
+{
+  "name": "geschaeftsprozesse_intermediate_v1_lead-generation_enhanced-integration-hub_HS465.BQ1VM",
+  "displayName": "Geschaeftsprozesse lead generation enhanced integration hub (intermediate)",
+  "description": "AI-generated Geschaeftsprozesse lead generation automation using enhanced integration hub approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "lead-generation",
+    "enhanced-integration-hub",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-283",
+    "nodes-8"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "intermediate",
+  "focusArea": "lead-generation",
+  "workflowConcept": "enhanced-integration-hub",
+  "templateId": "HS465.BQ1VM",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-lead-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse lead generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-lead-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "283",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "lead-generation",
+    "workflowConcept": "enhanced-integration-hub",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "enhanced-integration-hub",
+      "qualityScore": 0.7237874174172808
+    }
+  }
+}
