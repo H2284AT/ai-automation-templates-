@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_intermediate_v1_docker-automation_dynamic-workflow-orchestrator_HS990.JYW53",
+  "displayName": "Technische-Infrastruktur docker automation dynamic workflow orchestrator (intermediate)",
+  "description": "AI-generated Technische-Infrastruktur docker automation automation using dynamic workflow orchestrator approach (intermediate level). 5 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "docker-automation",
+    "dynamic-workflow-orchestrator",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-281",
+    "nodes-5"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "intermediate",
+  "focusArea": "docker-automation",
+  "workflowConcept": "dynamic-workflow-orchestrator",
+  "templateId": "HS990.JYW53",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-docker-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur docker automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-docker-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "281",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "docker-automation",
+    "workflowConcept": "dynamic-workflow-orchestrator",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "dynamic-workflow-orchestrator",
+      "qualityScore": 0.7999766467758664
+    }
+  }
+}
