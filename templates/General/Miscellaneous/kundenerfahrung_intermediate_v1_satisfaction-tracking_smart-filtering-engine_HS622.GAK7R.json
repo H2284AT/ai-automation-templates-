@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_intermediate_v1_satisfaction-tracking_smart-filtering-engine_HS622.GAK7R",
+  "displayName": "Kundenerfahrung satisfaction tracking smart filtering engine (intermediate)",
+  "description": "AI-generated Kundenerfahrung satisfaction tracking automation using smart filtering engine approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "satisfaction-tracking",
+    "smart-filtering-engine",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-281",
+    "nodes-8"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "intermediate",
+  "focusArea": "satisfaction-tracking",
+  "workflowConcept": "smart-filtering-engine",
+  "templateId": "HS622.GAK7R",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-satisfaction-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung satisfaction tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-satisfaction-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "281",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "satisfaction-tracking",
+    "workflowConcept": "smart-filtering-engine",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "smart-filtering-engine",
+      "qualityScore": 0.712731934433542
+    }
+  }
+}
