@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_git-workflows_quick-response-handler_HS852.XJ66T",
+  "displayName": "Technische-Infrastruktur git workflows quick response handler (basic)",
+  "description": "AI-generated Technische-Infrastruktur git workflows automation using quick response handler approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "git-workflows",
+    "quick-response-handler",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-288",
+    "nodes-3"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "git-workflows",
+  "workflowConcept": "quick-response-handler",
+  "templateId": "HS852.XJ66T",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-git-workflows",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur git workflows Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-git-workflows-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "288",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "git-workflows",
+    "workflowConcept": "quick-response-handler",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "quick-response-handler",
+      "qualityScore": 0.7163439888508182
+    }
+  }
+}
