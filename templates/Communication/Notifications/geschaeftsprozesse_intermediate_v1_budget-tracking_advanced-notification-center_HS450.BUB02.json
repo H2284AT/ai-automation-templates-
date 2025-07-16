@@ -1,0 +1,62 @@
+{
+  "name": "geschaeftsprozesse_intermediate_v1_budget-tracking_advanced-notification-center_HS450.BUB02",
+  "displayName": "Geschaeftsprozesse budget tracking advanced notification center (intermediate)",
+  "description": "AI-generated Geschaeftsprozesse budget tracking automation using advanced notification center approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "budget-tracking",
+    "advanced-notification-center",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-293",
+    "nodes-6"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "intermediate",
+  "focusArea": "budget-tracking",
+  "workflowConcept": "advanced-notification-center",
+  "templateId": "HS450.BUB02",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-budget-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse budget tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-budget-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "293",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "budget-tracking",
+    "workflowConcept": "advanced-notification-center",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-notification-center",
+      "qualityScore": 0.9320981273830038
+    }
+  }
+}
