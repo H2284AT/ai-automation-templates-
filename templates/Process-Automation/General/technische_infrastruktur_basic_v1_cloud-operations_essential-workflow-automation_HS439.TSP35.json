@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_cloud-operations_essential-workflow-automation_HS439.TSP35",
+  "displayName": "Technische-Infrastruktur cloud operations essential workflow automation (basic)",
+  "description": "AI-generated Technische-Infrastruktur cloud operations automation using essential workflow automation approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "cloud-operations",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-293",
+    "nodes-3"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "cloud-operations",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS439.TSP35",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-cloud-operations",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur cloud operations Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-cloud-operations-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "293",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "cloud-operations",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8068492800551076
+    }
+  }
+}
