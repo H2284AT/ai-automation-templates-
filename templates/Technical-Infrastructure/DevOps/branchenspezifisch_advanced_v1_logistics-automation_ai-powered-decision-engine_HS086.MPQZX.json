@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_advanced_v1_logistics-automation_ai-powered-decision-engine_HS086.MPQZX",
+  "displayName": "Branchenspezifisch logistics automation ai powered decision engine (advanced)",
+  "description": "AI-generated Branchenspezifisch logistics automation automation using ai powered decision engine approach (advanced level). 11 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "logistics-automation",
+    "ai-powered-decision-engine",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-293",
+    "nodes-11"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "advanced",
+  "focusArea": "logistics-automation",
+  "workflowConcept": "ai-powered-decision-engine",
+  "templateId": "HS086.MPQZX",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-logistics-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch logistics automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-logistics-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "293",
+    "nodeCount": 11,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "logistics-automation",
+    "workflowConcept": "ai-powered-decision-engine",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "ai-powered-decision-engine",
+      "qualityScore": 0.7587700986896219
+    }
+  }
+}
