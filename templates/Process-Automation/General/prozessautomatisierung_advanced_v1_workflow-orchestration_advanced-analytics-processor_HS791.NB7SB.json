@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_advanced_v1_workflow-orchestration_advanced-analytics-processor_HS791.NB7SB",
+  "displayName": "Prozessautomatisierung workflow orchestration advanced analytics processor (advanced)",
+  "description": "AI-generated Prozessautomatisierung workflow orchestration automation using advanced analytics processor approach (advanced level). 12 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "workflow-orchestration",
+    "advanced-analytics-processor",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-293",
+    "nodes-12"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "advanced",
+  "focusArea": "workflow-orchestration",
+  "workflowConcept": "advanced-analytics-processor",
+  "templateId": "HS791.NB7SB",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-workflow-orchestration",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung workflow orchestration Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-workflow-orchestration-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "293",
+    "nodeCount": 12,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "workflow-orchestration",
+    "workflowConcept": "advanced-analytics-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-analytics-processor",
+      "qualityScore": 0.8412788826759509
+    }
+  }
+}
