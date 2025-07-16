@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_intermediate_v1_quality-control_dynamic-workflow-orchestrator_HS993.ZMQEW",
+  "displayName": "Branchenspezifisch quality control dynamic workflow orchestrator (intermediate)",
+  "description": "AI-generated Branchenspezifisch quality control automation using dynamic workflow orchestrator approach (intermediate level). 7 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "quality-control",
+    "dynamic-workflow-orchestrator",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-292",
+    "nodes-7"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "intermediate",
+  "focusArea": "quality-control",
+  "workflowConcept": "dynamic-workflow-orchestrator",
+  "templateId": "HS993.ZMQEW",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch quality control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-quality-control-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "292",
+    "nodeCount": 7,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "quality-control",
+    "workflowConcept": "dynamic-workflow-orchestrator",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "dynamic-workflow-orchestrator",
+      "qualityScore": 0.9212498827915825
+    }
+  }
+}
