@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_intermediate_v1_document-processing_multi-stage-processor_HS073.DIN2L",
+  "displayName": "Prozessautomatisierung document processing multi stage processor (intermediate)",
+  "description": "AI-generated Prozessautomatisierung document processing automation using multi stage processor approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "document-processing",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-292",
+    "nodes-6"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "intermediate",
+  "focusArea": "document-processing",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS073.DIN2L",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-document-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung document processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-document-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "292",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "document-processing",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.8124306610558725
+    }
+  }
+}
