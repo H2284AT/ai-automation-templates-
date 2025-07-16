@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_intermediate_v1_multi-channel-support_multi-stage-processor_HS356.TKN7M",
+  "displayName": "Kundenerfahrung multi channel support multi stage processor (intermediate)",
+  "description": "AI-generated Kundenerfahrung multi channel support automation using multi stage processor approach (intermediate level). 5 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "multi-channel-support",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-292",
+    "nodes-5"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "intermediate",
+  "focusArea": "multi-channel-support",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS356.TKN7M",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-multi-channel-support",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung multi channel support Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-multi-channel-support-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "292",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "multi-channel-support",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.9413351106949474
+    }
+  }
+}
