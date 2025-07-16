@@ -1,0 +1,62 @@
+{
+  "name": "geschaeftsprozesse_advanced_v1_invoice-processing_ai-powered-decision-engine_HS689.IWOEB",
+  "displayName": "Geschaeftsprozesse invoice processing ai powered decision engine (advanced)",
+  "description": "AI-generated Geschaeftsprozesse invoice processing automation using ai powered decision engine approach (advanced level). 12 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "invoice-processing",
+    "ai-powered-decision-engine",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-294",
+    "nodes-12"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "advanced",
+  "focusArea": "invoice-processing",
+  "workflowConcept": "ai-powered-decision-engine",
+  "templateId": "HS689.IWOEB",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-invoice-processing",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse invoice processing Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-invoice-processing-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "294",
+    "nodeCount": 12,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "invoice-processing",
+    "workflowConcept": "ai-powered-decision-engine",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "ai-powered-decision-engine",
+      "qualityScore": 0.9816185388064813
+    }
+  }
+}
