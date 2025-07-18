@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_intermediate_v1_compliance-tracking_multi-stage-processor_HS795.YJB1V",
+  "displayName": "Branchenspezifisch compliance tracking multi stage processor (intermediate)",
+  "description": "AI-generated Branchenspezifisch compliance tracking automation using multi stage processor approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "compliance-tracking",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-296",
+    "nodes-6"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "intermediate",
+  "focusArea": "compliance-tracking",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS795.YJB1V",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-compliance-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch compliance tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-compliance-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "296",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "compliance-tracking",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.8625428078201058
+    }
+  }
+}
