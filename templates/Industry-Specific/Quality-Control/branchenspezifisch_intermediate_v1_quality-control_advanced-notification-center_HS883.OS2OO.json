@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_intermediate_v1_quality-control_advanced-notification-center_HS883.OS2OO",
+  "displayName": "Branchenspezifisch quality control advanced notification center (intermediate)",
+  "description": "AI-generated Branchenspezifisch quality control automation using advanced notification center approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "quality-control",
+    "advanced-notification-center",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-297",
+    "nodes-8"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "intermediate",
+  "focusArea": "quality-control",
+  "workflowConcept": "advanced-notification-center",
+  "templateId": "HS883.OS2OO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch quality control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-quality-control-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "297",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "quality-control",
+    "workflowConcept": "advanced-notification-center",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-notification-center",
+      "qualityScore": 0.7412703759642307
+    }
+  }
+}
