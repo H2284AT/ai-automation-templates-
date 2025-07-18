@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_intermediate_v1_customer-support_dynamic-workflow-orchestrator_HS219.UPU8Y",
+  "displayName": "Kundenerfahrung customer support dynamic workflow orchestrator (intermediate)",
+  "description": "AI-generated Kundenerfahrung customer support automation using dynamic workflow orchestrator approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "customer-support",
+    "dynamic-workflow-orchestrator",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-296",
+    "nodes-6"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "intermediate",
+  "focusArea": "customer-support",
+  "workflowConcept": "dynamic-workflow-orchestrator",
+  "templateId": "HS219.UPU8Y",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-customer-support",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung customer support Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-customer-support-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "296",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "customer-support",
+    "workflowConcept": "dynamic-workflow-orchestrator",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "dynamic-workflow-orchestrator",
+      "qualityScore": 0.8892293810575845
+    }
+  }
+}
