@@ -1,0 +1,62 @@
+{
+  "name": "prozessautomatisierung_intermediate_v1_rpa-processes_advanced-notification-center_HS097.RDZOM",
+  "displayName": "Prozessautomatisierung rpa processes advanced notification center (intermediate)",
+  "description": "AI-generated Prozessautomatisierung rpa processes automation using advanced notification center approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "rpa-processes",
+    "advanced-notification-center",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-298",
+    "nodes-8"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "intermediate",
+  "focusArea": "rpa-processes",
+  "workflowConcept": "advanced-notification-center",
+  "templateId": "HS097.RDZOM",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prozessautomatisierung-rpa-processes",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Prozessautomatisierung rpa processes Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "prozessautomatisierung-rpa-processes-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "298",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "rpa-processes",
+    "workflowConcept": "advanced-notification-center",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-notification-center",
+      "qualityScore": 0.8197792173961422
+    }
+  }
+}
