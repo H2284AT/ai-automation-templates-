@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_intermediate_v1_maintenance-scheduling_advanced-notification-center_HS196.VY1LJ",
+  "displayName": "Branchenspezifisch maintenance scheduling advanced notification center (intermediate)",
+  "description": "AI-generated Branchenspezifisch maintenance scheduling automation using advanced notification center approach (intermediate level). 6 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "maintenance-scheduling",
+    "advanced-notification-center",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-300",
+    "nodes-6"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "intermediate",
+  "focusArea": "maintenance-scheduling",
+  "workflowConcept": "advanced-notification-center",
+  "templateId": "HS196.VY1LJ",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-maintenance-scheduling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch maintenance scheduling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-maintenance-scheduling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "300",
+    "nodeCount": 6,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "maintenance-scheduling",
+    "workflowConcept": "advanced-notification-center",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-notification-center",
+      "qualityScore": 0.7996089562607133
+    }
+  }
+}
