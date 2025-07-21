@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_basic_v1_git-workflows_essential-workflow-automation_HS606.EMMOH",
+  "displayName": "Technische-Infrastruktur git workflows essential workflow automation (basic)",
+  "description": "AI-generated Technische-Infrastruktur git workflows automation using essential workflow automation approach (basic level). 4 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "git-workflows",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-300",
+    "nodes-4"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "git-workflows",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS606.EMMOH",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-git-workflows",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur git workflows Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-git-workflows-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "300",
+    "nodeCount": 4,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "git-workflows",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8782097750741831
+    }
+  }
+}
