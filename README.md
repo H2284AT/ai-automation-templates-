@@ -1,4 +1,4 @@
-# ai-automation-templates-
+# ai-automation-templates
 
 👋 Hallo, ich bin Herbert
 
