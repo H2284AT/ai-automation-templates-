@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_basic_v1_compliance-tracking_streamlined-integration_HS029.HKMIO",
+  "displayName": "Branchenspezifisch compliance tracking streamlined integration (basic)",
+  "description": "AI-generated Branchenspezifisch compliance tracking automation using streamlined integration approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "compliance-tracking",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-299",
+    "nodes-3"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "basic",
+  "focusArea": "compliance-tracking",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS029.HKMIO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-compliance-tracking",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch compliance tracking Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-compliance-tracking-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "299",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "compliance-tracking",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.7488581404828732
+    }
+  }
+}
