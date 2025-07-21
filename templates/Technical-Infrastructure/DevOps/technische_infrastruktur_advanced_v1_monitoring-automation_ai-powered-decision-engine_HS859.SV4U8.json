@@ -1,0 +1,62 @@
+{
+  "name": "technische_infrastruktur_advanced_v1_monitoring-automation_ai-powered-decision-engine_HS859.SV4U8",
+  "displayName": "Technische-Infrastruktur monitoring automation ai powered decision engine (advanced)",
+  "description": "AI-generated Technische-Infrastruktur monitoring automation automation using ai powered decision engine approach (advanced level). 12 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "monitoring-automation",
+    "ai-powered-decision-engine",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-298",
+    "nodes-12"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "advanced",
+  "focusArea": "monitoring-automation",
+  "workflowConcept": "ai-powered-decision-engine",
+  "templateId": "HS859.SV4U8",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "technische-infrastruktur-monitoring-automation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Technische-Infrastruktur monitoring automation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "technische-infrastruktur-monitoring-automation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "298",
+    "nodeCount": 12,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "monitoring-automation",
+    "workflowConcept": "ai-powered-decision-engine",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "ai-powered-decision-engine",
+      "qualityScore": 0.8075546217547466
+    }
+  }
+}
