@@ -1,0 +1,62 @@
+{
+  "name": "kundenerfahrung_advanced_v1_multi-channel-support_intelligent-automation-suite_HS003.EMVBH",
+  "displayName": "Kundenerfahrung multi channel support intelligent automation suite (advanced)",
+  "description": "AI-generated Kundenerfahrung multi channel support automation using intelligent automation suite approach (advanced level). 10 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "multi-channel-support",
+    "intelligent-automation-suite",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-302",
+    "nodes-10"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "advanced",
+  "focusArea": "multi-channel-support",
+  "workflowConcept": "intelligent-automation-suite",
+  "templateId": "HS003.EMVBH",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kundenerfahrung-multi-channel-support",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Kundenerfahrung multi channel support Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "kundenerfahrung-multi-channel-support-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "302",
+    "nodeCount": 10,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "multi-channel-support",
+    "workflowConcept": "intelligent-automation-suite",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "intelligent-automation-suite",
+      "qualityScore": 0.8227698306635337
+    }
+  }
+}
