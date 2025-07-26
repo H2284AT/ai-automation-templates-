@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_advanced_v1_quality-control_advanced-analytics-processor_HS718.US3LO",
+  "displayName": "Branchenspezifisch quality control advanced analytics processor (advanced)",
+  "description": "AI-generated Branchenspezifisch quality control automation using advanced analytics processor approach (advanced level). 8 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "quality-control",
+    "advanced-analytics-processor",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-306",
+    "nodes-8"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "advanced",
+  "focusArea": "quality-control",
+  "workflowConcept": "advanced-analytics-processor",
+  "templateId": "HS718.US3LO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-quality-control",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch quality control Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-quality-control-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "306",
+    "nodeCount": 8,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "quality-control",
+    "workflowConcept": "advanced-analytics-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-analytics-processor",
+      "qualityScore": 0.7875374572228808
+    }
+  }
+}
