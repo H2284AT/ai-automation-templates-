@@ -1,0 +1,62 @@
+{
+  "name": "geschaeftsprozesse_basic_v1_lead-generation_automated-notification-system_HS977.VINSR",
+  "displayName": "Geschaeftsprozesse lead generation automated notification system (basic)",
+  "description": "AI-generated Geschaeftsprozesse lead generation automation using automated notification system approach (basic level). 5 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "lead-generation",
+    "automated-notification-system",
+    "basic",
+    "professional",
+    "steindl-templates",
+    "version-306",
+    "nodes-5"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "basic",
+  "focusArea": "lead-generation",
+  "workflowConcept": "automated-notification-system",
+  "templateId": "HS977.VINSR",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-lead-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse lead generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-lead-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "306",
+    "nodeCount": 5,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "lead-generation",
+    "workflowConcept": "automated-notification-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "automated-notification-system",
+      "qualityScore": 0.7922774337322818
+    }
+  }
+}
