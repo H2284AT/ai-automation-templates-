@@ -1,0 +1,62 @@
+{
+  "name": "branchenspezifisch_intermediate_v1_maintenance-scheduling_intelligent-routing-system_HS370.ON0OC",
+  "displayName": "Branchenspezifisch maintenance scheduling intelligent routing system (intermediate)",
+  "description": "AI-generated Branchenspezifisch maintenance scheduling automation using intelligent routing system approach (intermediate level). 8 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "branchenspezifisch",
+    "maintenance-scheduling",
+    "intelligent-routing-system",
+    "intermediate",
+    "professional",
+    "steindl-templates",
+    "version-303",
+    "nodes-8"
+  ],
+  "category": "Branchenspezifisch",
+  "subcategory": "Branchenspezifisch",
+  "complexity": "intermediate",
+  "focusArea": "maintenance-scheduling",
+  "workflowConcept": "intelligent-routing-system",
+  "templateId": "HS370.ON0OC",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "branchenspezifisch-maintenance-scheduling",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Branchenspezifisch maintenance scheduling Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "branchenspezifisch-maintenance-scheduling-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "303",
+    "nodeCount": 8,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "maintenance-scheduling",
+    "workflowConcept": "intelligent-routing-system",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "intelligent-routing-system",
+      "qualityScore": 0.9802077131781846
+    }
+  }
+}
