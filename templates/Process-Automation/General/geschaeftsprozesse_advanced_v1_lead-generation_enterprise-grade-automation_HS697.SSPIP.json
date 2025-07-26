@@ -1,0 +1,62 @@
+{
+  "name": "geschaeftsprozesse_advanced_v1_lead-generation_enterprise-grade-automation_HS697.SSPIP",
+  "displayName": "Geschaeftsprozesse lead generation enterprise grade automation (advanced)",
+  "description": "AI-generated Geschaeftsprozesse lead generation automation using enterprise grade automation approach (advanced level). 8 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "lead-generation",
+    "enterprise-grade-automation",
+    "advanced",
+    "professional",
+    "steindl-templates",
+    "version-305",
+    "nodes-8"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "advanced",
+  "focusArea": "lead-generation",
+  "workflowConcept": "enterprise-grade-automation",
+  "templateId": "HS697.SSPIP",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "geschaeftsprozesse-lead-generation",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Geschaeftsprozesse lead generation Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "geschaeftsprozesse-lead-generation-webhook"
+    }
+  ],
+  "connections": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "305",
+    "nodeCount": 8,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "lead-generation",
+    "workflowConcept": "enterprise-grade-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "enterprise-grade-automation",
+      "qualityScore": 0.7700468313900927
+    }
+  }
+}
