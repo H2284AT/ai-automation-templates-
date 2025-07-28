@@ -1,0 +1,171 @@
+{
+  "name": "prozessautomatisierung_advanced_v1_document-processing_enterprise-orchestration-platform_HS277.ZE7BS",
+  "displayName": "Prozessautomatisierung document processing enterprise orchestration platform (advanced)",
+  "description": "Funktionsfähiger Prozessautomatisierung document processing Workflow (advanced). 6 Nodes, 45-90 Minuten Setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "document-processing",
+    "enterprise-orchestration-platform",
+    "advanced",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-324",
+    "nodes-6"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "advanced",
+  "focusArea": "document-processing",
+  "workflowConcept": "enterprise-orchestration-platform",
+  "templateId": "HS277.ZE7BS",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "document-upload-324",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Document Upload Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "document-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const document = $json;\nconst metadata = { filename: document.filename || 'unknown', filesize: document.filesize || 0, mimetype: document.mimetype || 'unknown', upload_date: new Date().toISOString() };\nlet docType = 'unknown';\nif (metadata.filename.includes('invoice')) docType = 'invoice';\nelse if (metadata.filename.includes('contract')) docType = 'contract';\nelse if (metadata.filename.includes('report')) docType = 'report';\nreturn { json: { ...document, metadata, document_type: docType, processing_required: true } };"
+      },
+      "name": "Analyze Document",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "analyze-document"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.document_type === \"invoice\" }}",
+              "operation": "isTrue"
+            }
+          ]
+        }
+      },
+      "name": "Document Type Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "document-type-check"
+    },
+    {
+      "parameters": {
+        "functionCode": "const invoice = $json;\nreturn { json: { ...invoice, processed_as: 'invoice', next_step: 'accounting_system' } };"
+      },
+      "name": "Process Invoice",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        200
+      ],
+      "id": "process-invoice"
+    },
+    {
+      "parameters": {
+        "functionCode": "const doc = $json;\nreturn { json: { ...doc, processed_as: 'general_document', next_step: 'document_management_system' } };"
+      },
+      "name": "Process Other Documents",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "process-other"
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = $json;\nconst analytics = { processed_at: new Date().toISOString(), workflow_version: 'advanced' };\nreturn { json: { ...data, analytics } };"
+      },
+      "name": "Advanced Analytics",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        400
+      ],
+      "id": "advanced-analytics"
+    }
+  ],
+  "connections": {
+    "Document Upload Webhook": {
+      "main": [
+        [
+          "Analyze Document"
+        ]
+      ]
+    },
+    "Analyze Document": {
+      "main": [
+        [
+          "Document Type Check"
+        ]
+      ]
+    },
+    "Document Type Check": {
+      "main": [
+        [
+          "Process Invoice"
+        ],
+        [
+          "Process Other Documents"
+        ]
+      ]
+    },
+    "Process Other Documents": {
+      "main": [
+        [
+          "Advanced Analytics"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "324",
+    "nodeCount": 6,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "document-processing",
+    "workflowConcept": "enterprise-orchestration-platform",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "enterprise-orchestration-platform",
+      "qualityScore": 0.7507797606897373
+    }
+  }
+}
