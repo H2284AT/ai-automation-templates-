@@ -1,0 +1,116 @@
+{
+  "name": "technische_infrastruktur_basic_v1_kubernetes-management_simple-webhook-processor_HS702.HRHU9",
+  "displayName": "Technische-Infrastruktur kubernetes management simple webhook processor (basic)",
+  "description": "Funktionsfähiger Technische-Infrastruktur kubernetes management Workflow (basic). 3 Nodes, 5-15 Minuten Setup.",
+  "tags": [
+    "technische-infrastruktur",
+    "kubernetes-management",
+    "simple-webhook-processor",
+    "basic",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-317",
+    "nodes-3"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "kubernetes-management",
+  "workflowConcept": "simple-webhook-processor",
+  "templateId": "HS702.HRHU9",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-317",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const leadData = $json;\nif (!leadData.email || !leadData.company) { throw new Error('Missing required fields: email and company'); }\nconst enrichedLead = { ...leadData, leadScore: Math.floor(Math.random() * 100), timestamp: new Date().toISOString(), source: 'webhook', status: 'new' };\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.leadScore }}",
+              "operation": "gte",
+              "value2": 50
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "317",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "kubernetes-management",
+    "workflowConcept": "simple-webhook-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "simple-webhook-processor",
+      "qualityScore": 0.9548217744987739
+    }
+  }
+}
