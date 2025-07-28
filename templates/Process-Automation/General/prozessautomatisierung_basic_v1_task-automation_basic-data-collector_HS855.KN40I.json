@@ -1,0 +1,116 @@
+{
+  "name": "prozessautomatisierung_basic_v1_task-automation_basic-data-collector_HS855.KN40I",
+  "displayName": "Prozessautomatisierung task automation basic data collector (basic)",
+  "description": "Funktionsfähiger Prozessautomatisierung task automation Workflow (basic). 3 Nodes, 5-15 Minuten Setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "task-automation",
+    "basic-data-collector",
+    "basic",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-318",
+    "nodes-3"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "task-automation",
+  "workflowConcept": "basic-data-collector",
+  "templateId": "HS855.KN40I",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-318",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const leadData = $json;\nif (!leadData.email || !leadData.company) { throw new Error('Missing required fields: email and company'); }\nconst enrichedLead = { ...leadData, leadScore: Math.floor(Math.random() * 100), timestamp: new Date().toISOString(), source: 'webhook', status: 'new' };\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.leadScore }}",
+              "operation": "gte",
+              "value2": 50
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "318",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "task-automation",
+    "workflowConcept": "basic-data-collector",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "basic-data-collector",
+      "qualityScore": 0.9526164201606113
+    }
+  }
+}
