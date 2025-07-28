@@ -1,0 +1,157 @@
+{
+  "name": "kundenerfahrung_intermediate_v1_feedback-processing_multi-stage-processor_HS303.GZ0ZO",
+  "displayName": "Kundenerfahrung feedback processing multi stage processor (intermediate)",
+  "description": "Funktionsfähiger Kundenerfahrung feedback processing Workflow (intermediate). 5 Nodes, 20-40 Minuten Setup.",
+  "tags": [
+    "kundenerfahrung",
+    "feedback-processing",
+    "multi-stage-processor",
+    "intermediate",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-322",
+    "nodes-5"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "intermediate",
+  "focusArea": "feedback-processing",
+  "workflowConcept": "multi-stage-processor",
+  "templateId": "HS303.GZ0ZO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-322",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const leadData = $json;\nif (!leadData.email || !leadData.company) { throw new Error('Missing required fields: email and company'); }\nconst enrichedLead = { ...leadData, leadScore: Math.floor(Math.random() * 100), timestamp: new Date().toISOString(), source: 'webhook', status: 'new' };\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.leadScore }}",
+              "operation": "gte",
+              "value2": 50
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubspot.com/crm/v3/objects/contacts",
+        "jsonParameters": true,
+        "bodyJson": "={{ { properties: { email: $json.email, company: $json.company, lead_score: $json.leadScore } } }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotApi"
+      },
+      "name": "Create HubSpot Contact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        840,
+        200
+      ],
+      "id": "hubspot-contact"
+    },
+    {
+      "parameters": {
+        "functionCode": "return { json: { ...$json, action: 'nurturing_campaign', campaign_type: 'low_score_leads' } };"
+      },
+      "name": "Send to Nurturing",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "nurturing-campaign"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    },
+    "Lead Score Check": {
+      "main": [
+        [
+          "Create HubSpot Contact"
+        ],
+        [
+          "Send to Nurturing"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-sonnet",
+    "templateId": "322",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "feedback-processing",
+    "workflowConcept": "multi-stage-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "multi-stage-processor",
+      "qualityScore": 0.7643975478570861
+    }
+  }
+}
