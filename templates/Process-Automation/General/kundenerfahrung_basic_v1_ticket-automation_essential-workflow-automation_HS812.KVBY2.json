@@ -1,0 +1,115 @@
+{
+  "name": "kundenerfahrung_basic_v1_ticket-automation_essential-workflow-automation_HS812.KVBY2",
+  "displayName": "Kundenerfahrung ticket automation essential workflow automation (basic)",
+  "description": "Funktionsfähiger Kundenerfahrung ticket automation Workflow (basic). 3 Nodes, 5-15 Minuten Setup.",
+  "tags": [
+    "kundenerfahrung",
+    "ticket-automation",
+    "essential-workflow-automation",
+    "basic",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-317",
+    "nodes-3"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "basic",
+  "focusArea": "ticket-automation",
+  "workflowConcept": "essential-workflow-automation",
+  "templateId": "HS812.KVBY2",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "support-ticket-317",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Support Ticket Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "support-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const ticket = $json;\nconst highPriorityKeywords = ['urgent','critical','down','broken','emergency'];\nconst mediumPriorityKeywords = ['issue','problem','bug','error'];\nconst text = ((ticket.subject||'')+' '+(ticket.description||'')).toLowerCase();\nlet priority='low';\nif (highPriorityKeywords.some(k=>text.includes(k))) priority='high';\nelse if (mediumPriorityKeywords.some(k=>text.includes(k))) priority='medium';\nlet category='general';\nif (text.includes('login')||text.includes('password')) category='authentication';\nelse if (text.includes('billing')||text.includes('payment')) category='billing';\nelse if (text.includes('technical')||text.includes('api')) category='technical';\nreturn { json: { ...ticket, priority, category, ticket_id: 'TKT-'+Date.now(), created_at: new Date().toISOString() } };"
+      },
+      "name": "Analyze Ticket",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "analyze-ticket"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.priority === \"high\" }}",
+              "operation": "isTrue"
+            }
+          ]
+        }
+      },
+      "name": "Priority Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "priority-check"
+    }
+  ],
+  "connections": {
+    "Support Ticket Webhook": {
+      "main": [
+        [
+          "Analyze Ticket"
+        ]
+      ]
+    },
+    "Analyze Ticket": {
+      "main": [
+        [
+          "Priority Check"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "317",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "ticket-automation",
+    "workflowConcept": "essential-workflow-automation",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "essential-workflow-automation",
+      "qualityScore": 0.8928132700342545
+    }
+  }
+}
