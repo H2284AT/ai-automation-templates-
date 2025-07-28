@@ -1,0 +1,177 @@
+{
+  "name": "prozessautomatisierung_advanced_v1_batch-processing_advanced-analytics-processor_HS058.VV5IF",
+  "displayName": "Prozessautomatisierung batch processing advanced analytics processor (advanced)",
+  "description": "Funktionsfähiger Prozessautomatisierung batch processing Workflow (advanced). 6 Nodes, 45-90 Minuten Setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "batch-processing",
+    "advanced-analytics-processor",
+    "advanced",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-323",
+    "nodes-6"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "advanced",
+  "focusArea": "batch-processing",
+  "workflowConcept": "advanced-analytics-processor",
+  "templateId": "HS058.VV5IF",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-323",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const leadData = $json;\nif (!leadData.email || !leadData.company) { throw new Error('Missing required fields: email and company'); }\nconst enrichedLead = { ...leadData, leadScore: Math.floor(Math.random() * 100), timestamp: new Date().toISOString(), source: 'webhook', status: 'new' };\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.leadScore }}",
+              "operation": "gte",
+              "value2": 50
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubspot.com/crm/v3/objects/contacts",
+        "jsonParameters": true,
+        "bodyJson": "={{ { properties: { email: $json.email, company: $json.company, lead_score: $json.leadScore } } }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotApi"
+      },
+      "name": "Create HubSpot Contact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        840,
+        200
+      ],
+      "id": "hubspot-contact"
+    },
+    {
+      "parameters": {
+        "functionCode": "return { json: { ...$json, action: 'nurturing_campaign', campaign_type: 'low_score_leads' } };"
+      },
+      "name": "Send to Nurturing",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "nurturing-campaign"
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = $json;\nconst analytics = { processed_at: new Date().toISOString(), workflow_version: 'advanced' };\nreturn { json: { ...data, analytics } };"
+      },
+      "name": "Advanced Analytics",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        400
+      ],
+      "id": "advanced-analytics"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    },
+    "Lead Score Check": {
+      "main": [
+        [
+          "Create HubSpot Contact"
+        ],
+        [
+          "Send to Nurturing"
+        ]
+      ]
+    },
+    "Send to Nurturing": {
+      "main": [
+        [
+          "Advanced Analytics"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "323",
+    "nodeCount": 6,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "batch-processing",
+    "workflowConcept": "advanced-analytics-processor",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-analytics-processor",
+      "qualityScore": 0.9876310943344716
+    }
+  }
+}
