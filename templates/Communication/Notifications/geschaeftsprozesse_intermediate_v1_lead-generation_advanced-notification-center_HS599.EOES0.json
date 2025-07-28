@@ -1,0 +1,160 @@
+{
+  "name": "geschaeftsprozesse_intermediate_v1_lead-generation_advanced-notification-center_HS599.EOES0",
+  "displayName": "Geschaeftsprozesse lead generation advanced notification center (intermediate)",
+  "description": "Funktionsfähiger Geschaeftsprozesse lead generation automation workflow using advanced notification center approach (intermediate level). 5 nodes, 20-40 Minuten setup.",
+  "tags": [
+    "geschaeftsprozesse",
+    "lead-generation",
+    "advanced-notification-center",
+    "intermediate",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-312",
+    "nodes-5"
+  ],
+  "category": "Geschaeftsprozesse",
+  "subcategory": "Geschaeftsprozesse",
+  "complexity": "intermediate",
+  "focusArea": "lead-generation",
+  "workflowConcept": "advanced-notification-center",
+  "templateId": "HS599.EOES0",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-capture",
+        "options": {}
+      },
+      "name": "Lead Capture Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "lead-capture"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Lead Qualification Logic\nconst lead = $json;\n\n// Company size scoring\nlet companyScore = 0;\nif (lead.company_size === 'enterprise') companyScore = 30;\nelse if (lead.company_size === 'medium') companyScore = 20;\nelse companyScore = 10;\n\n// Industry scoring\nlet industryScore = 0;\nconst targetIndustries = ['technology', 'finance', 'healthcare'];\nif (targetIndustries.includes(lead.industry)) industryScore = 25;\n\n// Final qualification\nconst qualificationScore = companyScore + industryScore;\nconst isQualified = qualificationScore >= 40;\n\nreturn {\n  json: {\n    ...lead,\n    qualification_score: qualificationScore,\n    is_qualified: isQualified,\n    processed_at: new Date().toISOString()\n  }\n};"
+      },
+      "name": "Lead Qualification",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "lead-qualification"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.is_qualified }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equal"
+              }
+            }
+          ]
+        }
+      },
+      "name": "Qualification Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "qualification-check"
+    },
+    {
+      "parameters": {
+        "url": "https://hooks.slack.com/workflows/YOUR_SLACK_WEBHOOK",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "text",
+              "value": "🎯 Qualified Lead Alert: {{ $json.company }} ({{ $json.qualification_score }} points)"
+            }
+          ]
+        }
+      },
+      "name": "Slack Alert - Qualified",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        840,
+        200
+      ],
+      "id": "slack-qualified"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Add to nurturing sequence\nreturn {\n  json: {\n    ...$json,\n    nurturing_sequence: 'unqualified_leads',\n    follow_up_date: new Date(Date.now() + 7*24*60*60*1000).toISOString()\n  }\n};"
+      },
+      "name": "Add to Nurturing",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "add-nurturing"
+    }
+  ],
+  "connections": {
+    "Lead Capture Webhook": {
+      "main": [
+        [
+          "Lead Qualification"
+        ]
+      ]
+    },
+    "Lead Qualification": {
+      "main": [
+        [
+          "Qualification Check"
+        ]
+      ]
+    },
+    "Qualification Check": {
+      "main": [
+        [
+          "Slack Alert - Qualified"
+        ],
+        [
+          "Add to Nurturing"
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "312",
+    "nodeCount": 5,
+    "setupTime": "20-40 Minuten",
+    "focusArea": "lead-generation",
+    "workflowConcept": "advanced-notification-center",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "advanced-notification-center",
+      "qualityScore": 0.7245786758843972
+    }
+  }
+}
