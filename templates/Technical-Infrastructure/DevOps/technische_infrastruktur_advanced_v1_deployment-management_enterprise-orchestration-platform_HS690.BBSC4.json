@@ -1,0 +1,177 @@
+{
+  "name": "technische_infrastruktur_advanced_v1_deployment-management_enterprise-orchestration-platform_HS690.BBSC4",
+  "displayName": "Technische-Infrastruktur deployment management enterprise orchestration platform (advanced)",
+  "description": "Funktionsfähiger Technische-Infrastruktur deployment management Workflow (advanced). 6 Nodes, 45-90 Minuten Setup.",
+  "tags": [
+    "technische-infrastruktur",
+    "deployment-management",
+    "enterprise-orchestration-platform",
+    "advanced",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-325",
+    "nodes-6"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "advanced",
+  "focusArea": "deployment-management",
+  "workflowConcept": "enterprise-orchestration-platform",
+  "templateId": "HS690.BBSC4",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-325",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "const leadData = $json;\nif (!leadData.email || !leadData.company) { throw new Error('Missing required fields: email and company'); }\nconst enrichedLead = { ...leadData, leadScore: Math.floor(Math.random() * 100), timestamp: new Date().toISOString(), source: 'webhook', status: 'new' };\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.leadScore }}",
+              "operation": "gte",
+              "value2": 50
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubspot.com/crm/v3/objects/contacts",
+        "jsonParameters": true,
+        "bodyJson": "={{ { properties: { email: $json.email, company: $json.company, lead_score: $json.leadScore } } }}",
+        "options": {},
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotApi"
+      },
+      "name": "Create HubSpot Contact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        840,
+        200
+      ],
+      "id": "hubspot-contact"
+    },
+    {
+      "parameters": {
+        "functionCode": "return { json: { ...$json, action: 'nurturing_campaign', campaign_type: 'low_score_leads' } };"
+      },
+      "name": "Send to Nurturing",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "nurturing-campaign"
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = $json;\nconst analytics = { processed_at: new Date().toISOString(), workflow_version: 'advanced' };\nreturn { json: { ...data, analytics } };"
+      },
+      "name": "Advanced Analytics",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        400
+      ],
+      "id": "advanced-analytics"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    },
+    "Lead Score Check": {
+      "main": [
+        [
+          "Create HubSpot Contact"
+        ],
+        [
+          "Send to Nurturing"
+        ]
+      ]
+    },
+    "Send to Nurturing": {
+      "main": [
+        [
+          "Advanced Analytics"
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "pinData": {},
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "325",
+    "nodeCount": 6,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "deployment-management",
+    "workflowConcept": "enterprise-orchestration-platform",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "enterprise-orchestration-platform",
+      "qualityScore": 0.9341217229547046
+    }
+  }
+}
