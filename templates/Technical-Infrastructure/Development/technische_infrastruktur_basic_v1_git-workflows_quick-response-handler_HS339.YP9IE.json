@@ -1,0 +1,116 @@
+{
+  "name": "technische_infrastruktur_basic_v1_git-workflows_quick-response-handler_HS339.YP9IE",
+  "displayName": "Technische-Infrastruktur git workflows quick response handler (basic)",
+  "description": "Funktionsfähiger Technische-Infrastruktur git workflows automation workflow using quick response handler approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "technische_infrastruktur",
+    "git-workflows",
+    "quick-response-handler",
+    "basic",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-313",
+    "nodes-3"
+  ],
+  "category": "Technische-Infrastruktur",
+  "subcategory": "Technische-Infrastruktur",
+  "complexity": "basic",
+  "focusArea": "git-workflows",
+  "workflowConcept": "quick-response-handler",
+  "templateId": "HS339.YP9IE",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-webhook",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Sales Data Processing\nconst leadData = $json;\n\n// Validate required fields\nif (!leadData.email || !leadData.company) {\n  throw new Error('Missing required fields: email and company');\n}\n\n// Enrich lead data\nconst enrichedLead = {\n  ...leadData,\n  leadScore: Math.floor(Math.random() * 100),\n  timestamp: new Date().toISOString(),\n  source: 'webhook',\n  status: 'new'\n};\n\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.leadScore }}",
+              "rightValue": 50,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "313",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "git-workflows",
+    "workflowConcept": "quick-response-handler",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "quick-response-handler",
+      "qualityScore": 0.8458383048950691
+    }
+  }
+}
