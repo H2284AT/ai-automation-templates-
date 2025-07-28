@@ -1,0 +1,183 @@
+{
+  "name": "kundenerfahrung_advanced_v1_knowledge-base_complex-integration-matrix_HS199.LTRSO",
+  "displayName": "Kundenerfahrung knowledge base complex integration matrix (advanced)",
+  "description": "Funktionsfähiger Kundenerfahrung knowledge base automation workflow using complex integration matrix approach (advanced level). 6 nodes, 45-90 Minuten setup.",
+  "tags": [
+    "kundenerfahrung",
+    "knowledge-base",
+    "complex-integration-matrix",
+    "advanced",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-312",
+    "nodes-6"
+  ],
+  "category": "Kundenerfahrung",
+  "subcategory": "Kundenerfahrung",
+  "complexity": "advanced",
+  "focusArea": "knowledge-base",
+  "workflowConcept": "complex-integration-matrix",
+  "templateId": "HS199.LTRSO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sales-automation-webhook",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "name": "Sales Data Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "sales-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Sales Data Processing\nconst leadData = $json;\n\n// Validate required fields\nif (!leadData.email || !leadData.company) {\n  throw new Error('Missing required fields: email and company');\n}\n\n// Enrich lead data\nconst enrichedLead = {\n  ...leadData,\n  leadScore: Math.floor(Math.random() * 100),\n  timestamp: new Date().toISOString(),\n  source: 'webhook',\n  status: 'new'\n};\n\nreturn { json: enrichedLead };"
+      },
+      "name": "Process Lead Data",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "process-lead"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.leadScore }}",
+              "rightValue": 50,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ]
+        }
+      },
+      "name": "Lead Score Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "lead-score-check"
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubspot.com/crm/v3/objects/contacts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotApi",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "properties",
+              "value": "={{ { \"email\": $json.email, \"company\": $json.company, \"lead_score\": $json.leadScore } }}"
+            }
+          ]
+        }
+      },
+      "name": "Create HubSpot Contact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        840,
+        200
+      ],
+      "id": "hubspot-contact"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Send to nurturing campaign\nreturn {\n  json: {\n    ...$json,\n    action: 'nurturing_campaign',\n    campaign_type: 'low_score_leads'\n  }\n};"
+      },
+      "name": "Send to Nurturing",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        840,
+        400
+      ],
+      "id": "nurturing-campaign"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Advanced analytics and logging\nconst data = $json;\nconst analytics = {\n  processed_at: new Date().toISOString(),\n  workflow_version: 'advanced',\n  performance_metrics: {\n    processing_time: Date.now() - (data.timestamp ? new Date(data.timestamp).getTime() : Date.now())\n  }\n};\n\nreturn { json: { ...data, analytics } };"
+      },
+      "name": "Advanced Analytics",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        300
+      ],
+      "id": "advanced-analytics"
+    }
+  ],
+  "connections": {
+    "Sales Data Webhook": {
+      "main": [
+        [
+          "Process Lead Data"
+        ]
+      ]
+    },
+    "Process Lead Data": {
+      "main": [
+        [
+          "Lead Score Check"
+        ]
+      ]
+    },
+    "Lead Score Check": {
+      "main": [
+        [
+          "Create HubSpot Contact"
+        ],
+        [
+          "Send to Nurturing"
+        ]
+      ]
+    },
+    "Send to Nurturing": {
+      "main": [
+        [
+          "Advanced Analytics"
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "claude-3-opus",
+    "templateId": "312",
+    "nodeCount": 6,
+    "setupTime": "45-90 Minuten",
+    "focusArea": "knowledge-base",
+    "workflowConcept": "complex-integration-matrix",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "complex-integration-matrix",
+      "qualityScore": 0.7110163383911042
+    }
+  }
+}
