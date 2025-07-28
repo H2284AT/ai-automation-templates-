@@ -1,0 +1,115 @@
+{
+  "name": "prozessautomatisierung_basic_v1_document-processing_streamlined-integration_HS578.MHBUV",
+  "displayName": "Prozessautomatisierung document processing streamlined integration (basic)",
+  "description": "Funktionsfähiger Prozessautomatisierung document processing automation workflow using streamlined integration approach (basic level). 3 nodes, 5-15 Minuten setup.",
+  "tags": [
+    "prozessautomatisierung",
+    "document-processing",
+    "streamlined-integration",
+    "basic",
+    "professional",
+    "functional-template",
+    "steindl-templates",
+    "version-314",
+    "nodes-3"
+  ],
+  "category": "Prozessautomatisierung",
+  "subcategory": "Prozessautomatisierung",
+  "complexity": "basic",
+  "focusArea": "document-processing",
+  "workflowConcept": "streamlined-integration",
+  "templateId": "HS578.MHBUV",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "document-upload",
+        "options": {}
+      },
+      "name": "Document Upload Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "id": "document-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Document Analysis\nconst document = $json;\n\n// Extract metadata\nconst metadata = {\n  filename: document.filename || 'unknown',\n  filesize: document.filesize || 0,\n  mimetype: document.mimetype || 'unknown',\n  upload_date: new Date().toISOString()\n};\n\n// Determine document type\nlet docType = 'unknown';\nif (metadata.filename.includes('invoice')) docType = 'invoice';\nelse if (metadata.filename.includes('contract')) docType = 'contract';\nelse if (metadata.filename.includes('report')) docType = 'report';\n\nreturn {\n  json: {\n    ...document,\n    metadata,\n    document_type: docType,\n    processing_required: true\n  }\n};"
+      },
+      "name": "Analyze Document",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "id": "analyze-document"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.document_type }}",
+              "rightValue": "invoice",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "name": "Document Type Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ],
+      "id": "document-type-check"
+    }
+  ],
+  "connections": {
+    "Document Upload Webhook": {
+      "main": [
+        [
+          "Analyze Document"
+        ]
+      ]
+    },
+    "Analyze Document": {
+      "main": [
+        [
+          "Document Type Check"
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "version": "2.0.0",
+    "templateVersion": "v1",
+    "author": "Herbert Steindl",
+    "developmentStandard": "gpt-4-turbo",
+    "templateId": "314",
+    "nodeCount": 3,
+    "setupTime": "5-15 Minuten",
+    "focusArea": "document-processing",
+    "workflowConcept": "streamlined-integration",
+    "portfolioAnalyzed": true,
+    "professionalTemplate": true,
+    "functionalTemplate": true,
+    "intelligentNaming": true,
+    "templateSystem": {
+      "enabled": true,
+      "analysisBase": 0,
+      "gapDetection": true,
+      "conceptualDesign": "streamlined-integration",
+      "qualityScore": 0.7224678046768664
+    }
+  }
+}
